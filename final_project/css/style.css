@@ -1,0 +1,139 @@
+@CHARSET "UTF-8";
+
+/* pocket ward style */
+
+/*common style*/
+@font-face {
+    font-family: 'NotoSansCJKkr';
+    font-style: normal;
+    font-weight: 100;
+    src: local('NotoSansCJKkr-Thin'), 
+    url(../font/font/NotoSansCJKkr-Thin.otf) format('opentype');
+}
+@font-face {
+    font-family: 'NotoSansCJKkr';
+    font-style: normal;
+    font-weight: 300;
+    src: local('NotoSansCJKkr-Light'),
+  	url(../font/font/NotoSansCJKkr-Light.otf) format('opentype');
+}
+@font-face {
+  font-family: 'NotoSansCJKkr';
+    font-style: normal;
+    font-weight: 350;
+    src: local('NotoSansCJKkr-DemiLight'),
+   url(../font/font/NotoSansCJKkr-DemiLight.otf) format('opentype');
+}
+@font-face {
+    font-family: 'NotoSansCJKkr';
+    font-style: normal;
+    font-weight: 400;
+    src: local('NotoSansCJKkr-Regular'),
+  	url(../font/font/NotoSansCJKkr-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'NotoSansCJKkr';
+    font-style: normal;
+    font-weight: 500;
+    src: local('NotoSansCJKkr-Medium'),
+  	 url(../font/font/NotoSansCJKkr-Medium.otf) format('opentype');
+}
+@font-face {
+    font-family: 'NotoSansCJKkr';
+    font-style: normal;
+    font-weight: 700;
+    src: local('NotoSansCJKkr-Bold'),
+  	url(../font/font/NotoSansCJKkr-Bold.otf) format('opentype');
+}
+@font-face {
+  font-family: 'NotoSansCJKkr';
+    font-style: normal;
+    font-weight: 900;
+    src: local('NotoSansCJKkr-Black'),
+   url(../font/font/NotoSansCJKkr-Black.otf) format('opentype');
+}
+
+/*korean*/
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, 
+kbd, q, samp, small, strong, sub, sup, var, b, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, 
+tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, 
+details, summary, select, input, textarea {
+	  font-family: 'Noto Sans Korean', Arial, Helvetica, sans-serif;
+}
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, 
+samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, 
+article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary, select,input,textarea {
+	font-family: 'Noto Sans Korean', Arial, Helvetica, sans-serif;
+	font-size:36px;
+	font-weight: normal;
+	vertical-align: baseline;
+	background: transparent;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{margin:0; padding:0;}
+.pull-left{float:left;}
+.pull-right{flost:right;}
+.text-center{text-align:center;}
+.text-right{text-align:right;}
+.text-left{text-align:left;}
+.img-center{margin:0 auto; }
+ul{margin:0; padding:0}
+li{margin:0; padding:0;}
+.circle{border-radius:50%;}
+.border-round{border-radius:5px;}
+.clearfix{clear:both;}
+.relative{position:relative;}
+.absolute{position:absolute;}
+
+
+
+
+/*checkbox*/
+
+/* 커스텀 이미지 체크박스 스타일 */
+.checkbox{line-height: 15px; width:80px; float:left;}
+.checkbox input[type='checkbox'] + label {
+	display: inline-block;
+	padding-left:98px;
+        
+	height: 98px;
+        text-shadow: none;
+	background-image: url('../img/button/checkbox.png');
+	background-size:98px 196px;
+	background-position:0 0;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	line-height:1;
+        color:#b5b5b5;
+        font-size:30px;
+        margin-top:0px;
+        font-weight:normal; 	
+}
+
+
+.checkbox input[type='checkbox']:checked + label {
+         color:black;
+	background-position:0 -98px;
+        -ms-background-position-y: "-98px"; 
+}
+.checkbox input[type='checkbox'] {
+	display: none;
+}
+.checkbox label { font-weight:bold;  padding-left:35px;}
+
+/*selectbox*/
+
+/*radiobox*/
+
+
+
+/*login page */
+.container{background:url('../img/bg01.png'); display:inline-block; height:2560px; width:1600px; }
+.login{margin-top:270px;}
+.bg_login{background:url('../img/login.png'); width:1190px; height:1165px; padding-top:100px; left:20px; top:-65px; display:inline-block;}
+.login_form{margin-top:100px; width:1230px; height:1130px; display:inline-block; background:#2e374c; border-radius:20px;  padding:20px; }
+.login_form form{margin:200px 100px;}
+.login_form input[type="text"],.login_form input[type="password"]{ border:none; min-width:800px; display:block;margin-bottom:25px; margin-left:160px; padding:30px; }
+/*side category*/
