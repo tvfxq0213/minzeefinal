@@ -19,7 +19,8 @@
 				<form>
 					<input type="text" placeholder="E-mail"/>
 					<input type="password" placeholder="Password"/>
-					<div class="checkbox">
+                                        <div class="img-center inline-block">
+					<div class="checkbox" style="margin-right:70px;">
 						<input type="checkbox" name="remember" id="checkbox1">
 						<label for="checkbox1"> 계정기억하기</label>
 					</div>	
@@ -27,12 +28,13 @@
 						<input type="checkbox" name="auto" id="checkbox2">
 						<label for="checkbox2"> 자동 로그인</label>
 					</div>
+                                        </div>
 					<input type="submit" class="bg-grad clearfix" value="로그인"/>			
 				</form>
 				
 				<div class="">
 					<a href="#0">아이디/비밀번호 찾기</a>
-					|
+                                        <span class="mgl30 mgr30">|</span>
 					<a href="#0">회원가입</a>
 				</div>
 			</div>
@@ -40,9 +42,23 @@
 		</div><!-- login -->
 		<div class="main">
 			<div class="category-tab">
-			</div>
+                            <img src="../img/logo2.png" alt="img" title="img"/>
+                            <img src="../img/ex1.png" class="circle" />
+                            <p class="name text-center">김소희</p>
+                            <p class="email"></p>
+                        
+                            <ul class="category-list">
+                                <li class="active">
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
 			<div class="contents-tab">
-			
+                            <section id="home">
 				<div class="contents-head"></div>
 				<div class="timegif"></div>
 				<div class="week">
@@ -52,9 +68,70 @@
 				<div class="memo">
 				
 				</div>
+                            </section>
+                            <section id="patient">
+                                
+                            </section>
+                            <section id="hospital_room">
+                            </section>
+                            <section id="schedule">
+                                
+                            </section>
+                            <section id="daily_report">
+                                
+                            </section>
+                            <section id="guideline">
+                                
+                            </section>
 			</div>
 		
 		</div><!-- main -->
 	</div>
+    <script>
+    $(document).ready(function() {
+  
+  var animating = false,
+      submitPhase1 = 1100,
+      submitPhase2 = 400,
+      logoutPhase1 = 800,
+      $login = $(".login"),
+      $app = $(".main");
+  
+  function ripple(elem, e) {
+    $(".ripple").remove();
+    var elTop = elem.offset().top,
+        elLeft = elem.offset().left,
+        x = e.pageX - elLeft,
+        y = e.pageY - elTop;
+    var $ripple = $("<div class='ripple'></div>");
+    $ripple.css({top: y, left: x});
+    elem.append($ripple);
+  };
+  
+  $(document).on("click", ".bg-grad", function(e) {
+    if (animating) return;
+    animating = true;
+    var that = this;
+    ripple($(that), e);
+    $(that).addClass("processing");
+    setTimeout(function() {
+      $(that).addClass("success");
+      setTimeout(function() {
+        $app.show();
+        $app.css("top");
+        $app.addClass("active");
+      }, submitPhase2 - 70);
+      setTimeout(function() {
+        $login.hide();
+        $login.addClass("inactive");
+        animating = false;
+        $(that).removeClass("success processing");
+      }, submitPhase2);
+    }, submitPhase1);
+  });
+  
+  
+});
+    </script>
 </body>
 </html>
