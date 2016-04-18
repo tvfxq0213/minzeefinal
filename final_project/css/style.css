@@ -93,20 +93,20 @@ li{margin:0; padding:0;}
 /*checkbox*/
 
 /* 커스텀 이미지 체크박스 스타일 */
-.checkbox{line-height: 15px; width:80px; float:left;}
+.checkbox{line-height: 49px; margin-top:30px;width:400px; float:left;}
 .checkbox input[type='checkbox'] + label {
 	display: inline-block;
-	padding-left:98px;
+	padding-left:65px;
         
-	height: 98px;
+	height: 49px;
         text-shadow: none;
 	background-image: url('../img/button/checkbox.png');
-	background-size:98px 196px;
+	background-size:49px 98px;
 	background-position:0 0;
 	background-repeat: no-repeat;
 	cursor: pointer;
-	line-height:1;
-        color:#b5b5b5;
+	line-height:45px;
+        color:#808080;;
         font-size:30px;
         margin-top:0px;
         font-weight:normal; 	
@@ -115,8 +115,8 @@ li{margin:0; padding:0;}
 
 .checkbox input[type='checkbox']:checked + label {
          color:black;
-	background-position:0 -98px;
-        -ms-background-position-y: "-98px"; 
+	background-position:0 -49px;
+        -ms-background-position-y: "-49px"; 
 }
 .checkbox input[type='checkbox'] {
 	display: none;
@@ -131,9 +131,11 @@ li{margin:0; padding:0;}
 
 /*login page */
 .container{background:url('../img/bg01.png'); display:inline-block; height:2560px; width:1600px; }
-.login{margin-top:270px;}
+.login{margin-top:270px; color:#808080;}
 .bg_login{background:url('../img/login.png'); width:1190px; height:1165px; padding-top:100px; left:20px; top:-65px; display:inline-block;}
 .login_form{margin-top:100px; width:1230px; height:1130px; display:inline-block; background:#2e374c; border-radius:20px;  padding:20px; }
-.login_form form{margin:200px 100px;}
+.login_form form{margin:200px 100px 50px 100px;}
 .login_form input[type="text"],.login_form input[type="password"]{ border:none; min-width:800px; display:block;margin-bottom:25px; margin-left:160px; padding:30px; }
+.bg-grad{width:100%; color:#fff; font-weight:700; border:1px solid #fff; margin-top:30px; padding:30px; border-radius:10px;}
+.login a{color:#808080; text-decoration:none;}
 /*side category*/
