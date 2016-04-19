@@ -134,7 +134,7 @@ img{width:50%;}
 
 /*login page */
 .container{background:url('../img/bg01.png'); display:inline-block; height:1280px; width:800px; }
-.login{height:100%; width:100%; padding-top:135px; color:#808080; /*display:inline-block;*/ display:none;}
+.login{height:100%; width:100%; padding-top:135px; color:#808080; display:inline-block; /*display:none;*/}
 .bg_login{background:url('../img/login.png'); background-size:100%; width:595px; height:583px; padding-top:50px; left:10px; top:-35px; display:inline-block;}
 .login_form{margin-top:100px; width:615px; height:565px; display:inline-block; background:#2e374c; border-radius:20px;  padding:20px; }
 .login_form form{margin:100px 50px 25px 50px;}
