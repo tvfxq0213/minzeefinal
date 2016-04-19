@@ -3,7 +3,11 @@
 <head>
 <meta charset="utf-8">
 <title>Pocket ward Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+
 <!-- style -->
+ <link rel="stylesheet" type="text/css" href="../css/icon.css">
  <link rel="stylesheet" type="text/css" href="../css/style.css">
 <!-- jQuery -->
 <script src="../js/lib/jquery.js"></script>
@@ -12,7 +16,7 @@
 
 <body>
 	<div class="container">
-		<div class="login text-center">
+		<div class="login text-center"  >
 		<img src="../img/logo.png" alt="Pocket ward" title="pocket ward">
 		<div class="login_form relative">
 			<div class="bg_login absolute img-center">
@@ -29,7 +33,7 @@
 						<label for="checkbox2"> 자동 로그인</label>
 					</div>
                                         </div>
-					<input type="submit" class="bg-grad clearfix" value="로그인"/>			
+					<a class="bg-grad clearfix" >로그인</a>			
 				</form>
 				
 				<div class="">
@@ -40,8 +44,8 @@
 			</div>
 		</div>
 		</div><!-- login -->
-		<div class="main">
-			<div class="category-tab">
+		<div class="main ">
+			<div class="category-tab pull-left">
                             <img src="../img/logo2.png" class="logo" alt="img" title="img"/>
                             <img src="../img/ex1.png" class="circle profile-img" />
                             <p class="name text-center">김소희</p>
@@ -49,15 +53,26 @@
                         
                             <ul class="category-list">
                                 <li class="active">
+                               		 <i class="icon-cate1"></i>
                                 </li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li>
+                                	<i class="icon-cate2"></i>
+                                </li>
+                                <li>
+                                	<i class="icon-cate3"></i>
+                                </li>
+                                <li>
+                                	<i class="icon-cate4"></i>
+                                </li>
+                                <li>
+                               	 	<i class="icon-cate5"></i>
+                                </li>
+                                <li>
+                                	<i class="icon-cate6"></i>
+                                </li>
                             </ul>
                         </div>
-			<div class="contents-tab">
+			<div class="contents-tab pull-right">
                             <section id="home">
 				<div class="contents-head"></div>
 				<div class="timegif"></div>
@@ -87,8 +102,8 @@
 		
 		</div><!-- main -->
 	</div>
-    <script>
-    $(document).ready(function() {
+<script type="text/javascript">
+$(function() {
   
   var animating = false,
       submitPhase1 = 1100,
@@ -108,7 +123,8 @@
     elem.append($ripple);
   };
   
-  $(document).on("click", ".bg-grad", function(e) {
+  $('.bg-grad').click(function(e) {
+	  console.log("Sdsd");
     if (animating) return;
     animating = true;
     var that = this;
@@ -132,6 +148,21 @@
   
   
 });
-    </script>
+  
+$(document).ready(function() {
+
+	  if (navigator.userAgent.match(/Android/i)) {
+	    window.scrollTo(0,0); // reset in case prev not scrolled  
+	    var nPageH = $(document).height();
+	    var nViewH = window.outerHeight;
+	    if (nViewH > nPageH) {
+	      nViewH -= 250;
+	      $('BODY').css('height',nViewH + 'px');
+	    }
+	    window.scrollTo(0,1);
+	  }
+
+	});
+</script>
 </body>
 </html>

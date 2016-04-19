@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'final';
+    src:
+        url('../font/icon/final.ttf?uk1elg') format('truetype'),
+        url('../font/icon/final.woff?uk1elg') format('woff'),
+        url('../font/icon/final.svg?uk1elg#final') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'final' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-body:before {
+    content: "\e900";
+}
+.icon-call:before {
+    content: "\e901";
+}
+.icon-cate1:before {
+    content: "\e902";
+}
+.icon-cate2:before {
+    content: "\e903";
+}
+.icon-cate3:before {
+    content: "\e904";
+}
+.icon-cate4:before {
+    content: "\e905";
+}
+.icon-cate5:before {
+    content: "\e906";
+}
+.icon-cate6:before {
+    content: "\e907";
+}
+.icon-food:before {
+    content: "\e908";
+}
+.icon-germs:before {
+    content: "\e909";
+}
+.icon-heart:before {
+    content: "\e90a";
+}
+.icon-home:before {
+    content: "\e90b";
+}
+.icon-info:before {
+    content: "\e90c";
+}
+.icon-injection_down:before {
+    content: "\e90d";
+}
+.icon-injection_up:before {
+    content: "\e90e";
+}
+.icon-link:before {
+    content: "\e90f";
+}
+.icon-man:before {
+    content: "\e910";
+}
+.icon-noti:before {
+    content: "\e911";
+}
+.icon-patient:before {
+    content: "\e912";
+}
+.icon-pill:before {
+    content: "\e913";
+}
+.icon-profile:before {
+    content: "\e914";
+}
+.icon-reload:before {
+    content: "\e915";
+}
+.icon-search:before {
+    content: "\e916";
+}
+.icon-setting:before {
+    content: "\e917";
+}
+.icon-talk:before {
+    content: "\e918";
+}
+.icon-water .path1:before {
+    content: "\e919";
+    color: rgb(59, 184, 178);
+}
+.icon-water .path2:before {
+    content: "\e91a";
+    margin-left: -1em;
+    color: rgba(255, 255, 255, 0.4);
+}
+.icon-woman:before {
+    content: "\e91b";
+}
+

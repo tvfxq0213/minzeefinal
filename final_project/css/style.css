@@ -72,9 +72,9 @@ article, aside, figure, footer, header, menu, nav, section, time, mark, audio, v
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-body{margin:0; padding:0;}
+body{margin:0; padding:0; overflow:hidden; background:url('../img/bg01.png');}
 .pull-left{float:left;}
-.pull-right{flost:right;}
+.pull-right{float:right;}
 .text-center{text-align:center;}
 .text-right{text-align:right;}
 .text-left{text-align:left;}
@@ -133,18 +133,70 @@ img{width:50%;}
 
 
 /*login page */
-.container{background:url('../img/bg01.png'); display:inline-block; height:1280px; width:800px; }
-.login{height:100%; width:100%; padding-top:135px; color:#808080; display:inline-block; /*display:none;*/}
+.container{ display:inline-block; height:100%; width:100%; }
+.login{
+	 -webkit-transition: opacity 0.1s, -webkit-transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25);
+  transition: opacity 0.1s, -webkit-transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25);
+  transition: opacity 0.1s, transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25);
+  transition: opacity 0.1s, transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25), -webkit-transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+	  position: relative;
+	height:100%; width:100%; padding-top:120px; overflow:hidden; color:#808080; display:inline-block; /*display:none;*/}
+.login.inactive {
+  opacity: 0;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
 .bg_login{background:url('../img/login.png'); background-size:100%; width:595px; height:583px; padding-top:50px; left:10px; top:-35px; display:inline-block;}
 .login_form{margin-top:100px; width:615px; height:565px; display:inline-block; background:#2e374c; border-radius:20px;  padding:20px; }
 .login_form form{margin:100px 50px 25px 50px;}
 .login_form input[type="text"],.login_form input[type="password"]{ border:none; min-width:400px; display:block; margin-bottom:13px; margin-left:80px; padding:15px; }
-.bg-grad{width:100%; font-size:22px; background:url('../img/bg-btn.png'); background-size: 100% ; color:#fff; font-weight:700; border:1px solid #fff; margin-top:30px; padding:20px; border-radius:5px;}
+.login a.bg-grad{width:calc(100% - 40px); display:inline-block; font-size:22px; background:url('../img/bg-btn.png'); background-size: 100% ; color:#fff; font-weight:700; border:1px solid #fff; margin-top:30px; padding:20px; border-radius:5px;}
 .login a{color:#808080; text-decoration:none; font-size:15px;}
 
+.main{ overflow:hidden; color:#808080; display:inline-block; 
+ position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: none;
+  -webkit-transition: opacity 0.1s, -webkit-transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25);
+  transition: opacity 0.1s, -webkit-transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25);
+  transition: opacity 0.1s, transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25);
+  transition: opacity 0.1s, transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25), -webkit-transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.main.active {
+display:inline-block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
 /*side category*/
-.category-tab{width:165px; color:#fff;}
+.category-tab{width:18%; color:#fff; height:100%}
 .category-tab .name{font-weight:900; font-size:20px;}
 .category-tab .email{width:130px; background:#3d435b; border-radius:5px; color:#8ea6b8; font-size:12px; padding:5px; }
 .profile-img{width:108px; height:108px; border: 10px solid rgba(47,56,70,0.7);}
 .logo{width:128px;}
+
+
+
+.contents-tab{width:82%; background:#fff; height:100%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
