@@ -52,29 +52,41 @@
                             <p class="email img-center">kimsohee@naver.com</p>
                         
                             <ul class="category-list">
-                                <li class="active">
+                                <li class="active" data-cate='home'>
+                                
                                		 <i class="icon-cate1"></i>
                                		 <p class="">홈</p>
+                               	
                                 </li>
-                                <li>
+                                <li data-cate='patient'>
+                               
                                 	<i class="icon-cate2"></i>
                                 	<p class="">환자정보</p>
+								
                                 </li>
-                                <li>
-                                	<i class="icon-cate3"></i>
+                                <li data-cate='hospital_room'>
+                                
+                                	<i class="icon-cate3" ></i>
                                 	<p class="">병실정보</p>
+                                
                                 </li>
-                                <li>
-                                	<i class="icon-cate4"></i>
+                                <li data-cate="schedule">
+                                
+                                	<i class="icon-cate4" ></i>
                                 	<p class="">일정표</p>
+                                
                                 </li>
-                                <li>
-                               	 	<i class="icon-cate5"></i>
+                                <li data-cate="daily_report">
+                              
+                               	 	<i class="icon-cate5" ></i>
                                	 	<p class="">간호일지</p>
+                               
                                 </li>
-                                <li>
-                                	<i class="icon-cate6"></i>
+                                <li data-cate="guideline">
+                                
+                                	<i class="icon-cate6" ></i>
                                 	<p>지침서</p>
+                               
                                 </li>
                             </ul>
                         </div>
@@ -257,7 +269,95 @@
 					</div>
                 </section>
                 <section id="patient">
-                    
+                	<div class="patient-head">
+                    <h2 class="patient-select">장민지 (Jang Min zee) <img src="../img/button/select_btn.png"class="select-btn"></h2>
+                	<p>1994.04.22 <i class="icon-woman"></i> 23세</p>
+                	</div>
+                	
+                	<div class="patient-chart relative">
+	                	<div class="absolute">
+	                	<span class="pull-left">No. 12345678</span>
+	                	<span class="pull-right">
+	                	<i class="icon-heart circle day"></i>
+	                	<i class="icon-patient circle evening"></i>
+	                	<i class="icon-food circle night"></i>
+	                	</span>
+	                
+	                	</div>
+	                	<div class="border-top">
+	                	
+	                	<img src="../img/ex7.jpg" class="pull-left"/>
+	                	<div class="pull-left">
+		                	<p class="text-sm text-right">16/06/02 12:00</p>
+		                	<ul class="info">
+		                		<li><i class="icon-profile"></i> 940422 - 2000000</li>
+		                		<li><i class="icon-home"></i> 서울시 강남구 청담동 97-7 405호</li>
+		                		<li><i class="icon-phone"></i> 010 - 1234 - 6454</li>
+		                	</ul>
+		                	
+		                	<ul>
+		                		<li>초진날짜 2016년 03월 02일</li>
+		                		<li>입원날짜 2016년 03월 09일</li>
+		                	</ul>
+	                	</div>
+	                	<div class="clearfix">
+	                	<div class="cols2-1 pull-left">
+	                	
+	                	</div>
+	                	<div class="cols2-1 pull-right">
+	                	
+	                	</div>
+	                	<div class="cols5-3">
+	                		<div class="cols2-1"></div>
+	                		<div class="cols2-1"></div>
+	                		<div class="cols4-1"></div>
+	                		<div class="cols4-1"></div>
+	                		<div class="cols4-1"></div>
+	                		<div class="cols4-1"></div>
+	                		<div class="cols1"></div>
+	                	
+	                	</div>
+	                	</div>
+	                	<div class="cols5-2">
+	                	
+	                	</div>
+	                	
+	                	</div>
+	                	
+	                	<div class="border-top">
+	                	<ul class="tab">
+	                		<li class="active"></li>
+	                		<li></li>
+	                		<li></li>
+	                	</ul>
+	                	<div class="clearfix">
+	                		<img src="../img/bone.png" class="pull-left"/>
+	                		<div class="pull-left">
+	                			<p>LBP c Lt. buttock pain.</p>
+	                			<p>agg 4일전 LBP 지속</p>
+	                			
+	                			<p class="mgt10">
+	                			2016년 01월 01일<br/>
+	                			L-spine simple x-ray<br/>
+	                			L4-5 disc space narrowing disc instability+
+	                			
+	                			</p>
+	                		
+	                		</div> 
+	                	</div>
+	                	</div>
+	                	
+	                	<div class="border-top">
+	                		<div class="cols3-1"></div>
+	                		<div class="cols3-1"></div>
+	                		<div class="cols3-1"></div>
+	                	</div>
+	                	
+	                	
+	                </div>
+                	
+                	
+                	
                 </section>
                 <section id="hospital_room">
                 </section>
@@ -316,6 +416,17 @@ $(function() {
         $(that).removeClass("success processing");
       }, submitPhase2);
     }, submitPhase1);
+    
+    
+    
+    $('.category-list li').click(function(){
+    	var cate = $("#"+$(this).attr("data-cate")+"");
+    	console.log(cate);
+    	$('.contents-tab section').hide();
+    	 $('.category-list li').removeClass('active');
+    	$(cate).css("display","inline-block");
+    	$(this).addClass("active");
+    });
   });
   
   
