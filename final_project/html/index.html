@@ -14,7 +14,7 @@
 </head>
 
 
-<body>
+<body onload="startTime();">
 	<div class="container">
 		<div class="login text-center"  >
 		<img src="../img/logo.png" alt="Pocket ward" title="pocket ward">
@@ -90,16 +90,40 @@
 				</div>
                 <section id="home">
 				
-				<div class="timegif"></div>
-				
-				
-				<div class="week">
-				</div>
-				<div class="notification">
-				</div>
-				<div class="memo">
-				
-				</div>
+					<div class="timegif border-top" id="timegif">
+					<img src="../img/main2.gif"/>
+						<div id="clock">
+						
+						</div>
+					
+					</div>
+					
+					<div class="div1 border-top mgt15">
+						<h2 class="title">공지사항</h2>
+					</div>
+					
+					<div class="div2 pull-left relative border-top">
+						<img src="../img/"/>
+						<h2 class="title">메모</h2>
+					</div>
+					
+					<div class="div3 pull-right border-top">
+					
+					</div>
+					<div class="clearfix"></div>
+					
+					<div class="middle pull-left">
+						<div class="div4  border-top">
+						</div>
+						<div class="div4  border-top">
+						</div>
+					</div>
+					<div class="pull-right  border-top div5">
+						
+					</div>
+					<div class="div1  border-top clearfix">
+					
+					</div>
                 </section>
                 <section id="patient">
                     
@@ -164,10 +188,30 @@ $(function() {
   });
   
   
-});
-  
-$(document).ready(function() {
 
+  
+});
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    /*document.getElementById('clock').innerHTML =
+    h + ":" + m + ":" + s;*/
+    if(h<09&&h>18){
+    	$('#timegif').css("background-image","url('../img/night.png')");
+    }else{
+    	$('#timegif').css("background-image","url('../img/noon.png')");
+    }
+    var t = setTimeout(startTime, 10000);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i}; // 숫자가 10보다 작을 경우 앞에 0을 붙여줌
+    return i;
+}
+$(document).ready(function() {
 	  if (navigator.userAgent.match(/Android/i)) {
 	    window.scrollTo(0,0); // reset in case prev not scrolled  
 	    var nPageH = $(document).height();
