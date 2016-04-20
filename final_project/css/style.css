@@ -80,7 +80,7 @@ body{margin:0; padding:0; overflow:hidden; background:url('../img/bg01.png');}
 .text-left{text-align:left;}
 .img-center{margin:0 auto; }
 ul{margin:0; padding:0}
-li{margin:0; padding:0;}
+li{margin:0; padding:0; list-style:none;}
 .circle{border-radius:50%;}
 .border-round{border-radius:5px;}
 .clearfix{clear:both;}
@@ -91,7 +91,7 @@ li{margin:0; padding:0;}
 .mgr15{margin-right:15px}
 .mgt15{margin-top: 15px;}
 .mgb15{margin-bottom: 15px;}
-img{width:50%;}
+img{width:50%; max-width:402px;}
 
 /*checkbox*/
 
@@ -177,22 +177,26 @@ display:inline-block;
           transform: scale(1);
 }
 /*side category*/
-.category-tab{width:18%; color:#fff; height:100%}
-.category-tab .name{font-weight:900; font-size:20px;}
+.category-tab{width:19%; color:#fff; height:100%}
+.category-tab .name{font-weight:900; font-size:20px; margin: 0 0 10px 0;}
 .category-tab .email{width:130px; background:#3d435b; border-radius:5px; color:#8ea6b8; font-size:12px; padding:5px; }
-.profile-img{width:108px; height:108px; border: 10px solid rgba(47,56,70,0.7);}
-.logo{width:128px;}
+.profile-img{width:108px; height:108px; border: 10px solid rgba(34,36,54,0.7);}
+.logo{width:128px; margin-top:45px;}
+.category-list {margin-top:30px;}
+.category-list li{position:relative;  width:calc(100% - 20px); padding:15px 30px 15px 20px; margin-left:20px;}
+.category-list li:after{content:""; background:url("../img/li_after.png"); background-size:111px 6px; height:6px; position:absolute; top:105px; width:111px; right:15px;  }
+.category-list li p{margin:3px 0 0 0; font-size:17px; }
+.category-list li.active{background:#c6d2d8; color:#00b0b4; border-radius:20px 0px 0px 20px}
+.category-list li.active p{font-weight:900;}
+.category-list li.active:after{content:""; background:url("../img/active.png"); background-size:30px 62px; height:62px; position:absolute; top:-15px; width:30px; right:5px; }
+.category-list li i{font-size:50px;}
+.contents-tab{width:81%; background:#fff; height:100%}
+.contents-tab .contents-head{height:45px; color:#999ca6;width:100%;  line-height:40px; }
+.contents-tab .contents-head i{font-size:20px; margin:0px 7px; display:inline-block;  vertical-align:middle; }
+.contents-tab .contents-head i:last-child{margin-right:15px;}
+.noti{top:-5px; right:6px; background:#ff7610; line-height:1.2; color:#fff; border:1px solid #fff; font-size:8px; text-align:center;  width:15px; height:15px; }
 
-
-
-.contents-tab{width:82%; background:#fff; height:100%}
-
-
-
-
-
-
-
+.contents-tab section{width:100%; height: calc(100% - 45px); background:#c6d2d8;}
 
 
 
