@@ -46,50 +46,50 @@
 		</div><!-- login -->
 		<div class="main ">
 			<div class="category-tab text-center pull-left">
-                            <img src="../img/logo2.png" class="logo" alt="img" title="img"/>
-                            <img src="../img/ex2.jpg" class="circle profile-img" style="margin-top:10px;" />
-                            <p class="name">김소희</p>
-                            <p class="email img-center">kimsohee@naver.com</p>
-                        
-                            <ul class="category-list">
-                                <li class="active" data-cate='home'>
-                                
-                               		 <i class="icon-cate1"></i>
-                               		 <p class="">홈</p>
-                               	
-                                </li>
-                                <li data-cate='patient'>
-                               
-                                	<i class="icon-cate2"></i>
-                                	<p class="">환자정보</p>
-								
-                                </li>
-                                <li data-cate='hospital_room'>
-                                
-                                	<i class="icon-cate3" ></i>
-                                	<p class="">병실정보</p>
-                                
-                                </li>
-                                <li data-cate="schedule">
-                                
-                                	<i class="icon-cate4" ></i>
-                                	<p class="">일정표</p>
-                                
-                                </li>
-                                <li data-cate="daily_report">
-                              
-                               	 	<i class="icon-cate5" ></i>
-                               	 	<p class="">간호일지</p>
-                               
-                                </li>
-                                <li data-cate="guideline">
-                                
-                                	<i class="icon-cate6" ></i>
-                                	<p>지침서</p>
-                               
-                                </li>
-                            </ul>
-                        </div>
+                <img src="../img/logo2.png" class="logo" alt="img" title="img"/>
+                <img src="../img/ex2.jpg" class="circle profile-img" style="margin-top:10px;" />
+                <p class="name">김소희</p>
+                <p class="email img-center">kimsohee@naver.com</p>
+            
+                <ul class="category-list">
+                    <li class="active" data-cate='home'>
+                    
+                   		 <i class="icon-cate1"></i>
+                   		 <p class="">홈</p>
+                   	
+                    </li>
+                    <li data-cate='patient'>
+                   
+                    	<i class="icon-cate2"></i>
+                    	<p class="">환자정보</p>
+
+                    </li>
+                    <li data-cate='hospital_room'>
+                    
+                    	<i class="icon-cate3" ></i>
+                    	<p class="">병실정보</p>
+                    
+                    </li>
+                    <li data-cate="schedule">
+                    
+                    	<i class="icon-cate4" ></i>
+                    	<p class="">일정표</p>
+                    
+                    </li>
+                    <li data-cate="daily_report">
+                  
+                   	 	<i class="icon-cate5" ></i>
+                   	 	<p class="">간호일지</p>
+                   
+                    </li>
+                    <li data-cate="guideline">
+                    
+                    	<i class="icon-cate6" ></i>
+                    	<p>지침서</p>
+                   
+                    </li>
+                </ul>
+            </div>
 			<div class="contents-tab  pull-right">
                 <div class="contents-head text-right">
 					<i class="icon-search"></i>
@@ -102,10 +102,23 @@
 				</div>
                 <section id="home">
 				
-					<div class="timegif border-top" id="timegif">
+					<div class="timegif border-top relative" id="timegif">
 					<img src="../img/main2.gif"/>
-						<div id="clock">
-						
+						<div class="clock absolute">
+							<span class="time1">
+							
+							</span>
+							<span class="time2">
+							
+							</span>
+							<br/>
+							<span class="date1">
+							
+							</span>
+							
+							<span class="date2">
+							
+							</span>
 						</div>
 					
 					</div>
@@ -217,7 +230,7 @@
 						<div class="content text-center">
 						<p style="margin-top:10px">자카바이러스</p>
 						<p style="font-weight:bold">Zica Virus</p>
-						<img src="../img/vir.png" style="width:120px; "/>
+						<img src="../img/vir.png" style="width:125px; "/>
 						<p>
 						<span class="pull-left" style="margin-left:50px">
 						사망자<br/>
@@ -271,11 +284,11 @@
                 <section id="patient">
                 	<div class="patient-head">
                     <h2 class="patient-select">장민지 (Jang Min zee) <img src="../img/button/select_btn.png"class="select-btn"></h2>
-                	<p>1994.04.22 <i class="icon-woman"></i> 23세</p>
+                	<p class="text-center">1994.04.22 <i class="icon-woman text-mint"></i> 23세</p>
                 	</div>
                 	
                 	<div class="patient-chart relative">
-	                	<div class="absolute">
+	                	<div class="absolute chart-top">
 	                	<span class="pull-left">No. 12345678</span>
 	                	<span class="pull-right">
 	                	<i class="icon-heart circle day"></i>
@@ -286,41 +299,76 @@
 	                	</div>
 	                	<div class="border-top">
 	                	
-	                	<img src="../img/ex7.jpg" class="pull-left"/>
-	                	<div class="pull-left">
+	                	<img src="../img/ex7.jpg" class="circle chart-profile pull-left"/>
+	                	<div class="pull-right mgt15">
 		                	<p class="text-sm text-right">16/06/02 12:00</p>
 		                	<ul class="info">
 		                		<li><i class="icon-profile"></i> 940422 - 2000000</li>
 		                		<li><i class="icon-home"></i> 서울시 강남구 청담동 97-7 405호</li>
-		                		<li><i class="icon-phone"></i> 010 - 1234 - 6454</li>
+		                		<li><i class="icon-call"></i> 010 - 1234 - 6454</li>
 		                	</ul>
 		                	
-		                	<ul>
+		                	<ul class="chart-date">
 		                		<li>초진날짜 2016년 03월 02일</li>
 		                		<li>입원날짜 2016년 03월 09일</li>
 		                	</ul>
 	                	</div>
 	                	<div class="clearfix">
-	                	<div class="cols2-1 pull-left">
-	                	
-	                	</div>
-	                	<div class="cols2-1 pull-right">
-	                	
-	                	</div>
-	                	<div class="cols5-3">
-	                		<div class="cols2-1"></div>
-	                		<div class="cols2-1"></div>
-	                		<div class="cols4-1"></div>
-	                		<div class="cols4-1"></div>
-	                		<div class="cols4-1"></div>
-	                		<div class="cols4-1"></div>
-	                		<div class="cols1"></div>
-	                	
-	                	</div>
-	                	</div>
-	                	<div class="cols5-2">
-	                	
-	                	</div>
+	                	<div class="content">
+		                	<div class="cols2-1 pull-left">
+		                		<p>보호자</p>
+		                		<img src="../img/ex1.png" class="pull-left chart-img-sm"/>
+		                		<ul class="pull-left ">
+		                			<li><i class="icon-profile"></i>김대장 (자매)</li>
+		                			<li><i class="icon-call"></i> 010 - 1234 - 6454 </li>
+		                			
+		                		</ul>
+		                	</div>
+		                	<div class="cols2-1 pull-right">
+		                		<p>담당의사</p>
+		                		<img src="../img/ex1.png" class="pull-left chart-img-sm"/>
+		                		<ul class="pull-left ">
+		                			<li><i class="icon-profile"></i>김은전 (26)</li>
+		                			<li><i class="icon-call"></i> 010 - 1234 - 6454 </li>
+		                		</ul>
+		                	</div>
+		                	<div class="cols5-3">
+		                		<div class="cols2-1">
+		                			<p>나이</p>
+		                			<p><span class="lg bold text">23</span></p>
+		                		</div>
+		                		<div class="cols2-1">
+		                			<p>몸무게</p>
+		                			<p><span class="lg bold text">47</span><span class="mlg text">kg</span></p>
+		                		</div>
+		                		<div class="cols4-1">
+		                			<p>TEMP</p>
+		                			<p><span class="lg bold text">36.5</span></p>
+		                			<p> - </p>
+		                		</div>
+		                		<div class="cols4-1">
+		                			<p>PULSE</p>
+		                			<p><span class="lg bold text">36.5</span></p>
+		                			<p> - </p>
+		                		</div>
+		                		<div class="cols4-1">
+		                			<p>RESP.</p>
+		                			<p><span class="lg bold text">36.5</span></p>
+		                			<p> - </p>
+		                		</div>
+		                		<div class="cols4-1">
+		                			<p>B.P</p>
+		                			<p><span class="lg bold text">36.5</span></p>
+		                			<p> - </p>
+		                		</div>
+		                		<div class="cols1 clearfix"></div>
+		                	
+		                	</div>
+		                	</div>
+		                	<div class="cols5-2">
+		                	
+		                	</div>
+		                </div>
 	                	
 	                	</div>
 	                	
@@ -421,7 +469,6 @@ $(function() {
     
     $('.category-list li').click(function(){
     	var cate = $("#"+$(this).attr("data-cate")+"");
-    	console.log(cate);
     	$('.contents-tab section').hide();
     	 $('.category-list li').removeClass('active');
     	$(cate).css("display","inline-block");
@@ -438,19 +485,43 @@ function startTime() {
     var h = today.getHours();
     var m = today.getMinutes();
     var s = today.getSeconds();
+    var Y = today.getFullYear();
+    var m = today.getMonth()+1;
+    var dd = today.getDate();
+    var d = today.getDay();
+    var time = "PM";
+    var weekday = new Array(7);
+    weekday[0]=  "Sun";
+    weekday[1] = "Mon";
+    weekday[2] = "Tue";
+    weekday[3] = "Wed";
+    weekday[4] = "Thu";
+    weekday[5] = "Fri";
+    weekday[6] = "Sat";
+
     m = checkTime(m);
     s = checkTime(s);
     /*document.getElementById('clock').innerHTML =
     h + ":" + m + ":" + s;*/
    
+    if(h<13){
+    	time="AM";
+    }
+    
     if(h<6||h>16){
     	
     	$('#timegif').css("background-image","url('../img/night.png')");
     }else{
-    	 console.log(h);
     	$('#timegif').css("background-image","url('../img/noon.png')");
     }
-    var t = setTimeout(startTime, 1000);
+    
+    
+    $('.clock .time1').text(time);
+    $('.clock .time2').text(h+":"+m);
+    $('.clock .date1').text(Y+'.'+m+'.'+dd);
+    $('.clock .date2').text(weekday[d]);
+    
+    var t = setTimeout(startTime, 6000);
 }
 function checkTime(i) {
     if (i < 10) {i = "0" + i}; // 숫자가 10보다 작을 경우 앞에 0을 붙여줌

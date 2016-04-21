@@ -64,7 +64,7 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
 samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, 
 article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary, select,input,textarea {
 	font-family: 'Noto Sans Korean', Arial, Helvetica, sans-serif;
-	font-size:18px;
+	font-size:16px;
 	font-weight: normal;
 	vertical-align: baseline;
 	background: transparent;
@@ -93,6 +93,15 @@ li{margin:0; padding:0; list-style:none;}
 .mgb15{margin-bottom: 15px;}
 img{width:50%; max-width:402px;}
 
+.cols2-1{width:(50% - 2px); float:left}
+.cols4-1{width:(25% - 2px); float:left}
+.cols3-1{width:(33.3% - 2px); float:left}
+.cols5-2{width:(40% - 2px); float:left;}
+.cols1{width:100%;}
+
+.text.lg{font-size:22px;}
+.text.mlg{font-size:20px;}
+.text.bold{font-weight:bold;}
 /*checkbox*/
 
 /* 커스텀 이미지 체크박스 스타일 */
@@ -151,7 +160,7 @@ img{width:50%; max-width:402px;}
 .bg_login{background:url('../img/login.png'); background-size:100%; width:595px; height:583px; padding-top:50px; left:10px; top:-35px; display:inline-block;}
 .login_form{margin-top:100px; width:615px; height:565px; display:inline-block; background:#2e374c; border-radius:20px;  padding:20px; }
 .login_form form{margin:100px 50px 25px 50px;}
-.login_form input[type="text"],.login_form input[type="password"]{ border:none; min-width:400px; display:block; margin-bottom:13px; margin-left:80px; padding:15px; }
+.login_form input[type="text"],.login_form input[type="password"]{ font-size:18px; border:none; min-width:400px; display:block; margin-bottom:13px; margin-left:80px; padding:15px; }
 .login a.bg-grad{width:calc(100% - 40px); display:inline-block; font-size:22px; background:url('../img/bg-btn.png'); background-size: 100% ; color:#fff; font-weight:700; border:1px solid #fff; margin-top:30px; padding:20px; border-radius:5px;}
 .login a{color:#808080; text-decoration:none; font-size:15px;}
 
@@ -226,8 +235,12 @@ div.timegif{background-size:cover; border:none; background-repeat-y:none; }
     border-radius: 5px 5px 0 0;}
 .div1{width:100%; display:inline-block}
 .div1 .title .circle{display:inline-block; margin-left:5px; width:30px; height:30px; font-weight:bold; color:#fff; line-height:30px; text-align:center;}
-.div1 ul{border:2px solid #fff; background:#fff; border-radius:5px; margin-bottom:-5px; width:100%;display:inline-block; }
-.div1 ul.week li{float:left; padding:10px 0; color:rgba(51,58,78,0.5); display:inline-block; width:14.2%; text-align:center;}
+.div1 ul{border:2px solid #fff; background:#fff; border-bottom:none; border-radius:5px; ; width:100%;display:inline-block; }
+.div1 ul.week li{float:left; margin-bottom:-5px; line-height:1.5; padding:20px 0; color:rgba(51,58,78,0.5); display:inline-block; width:14.2%; text-align:center;}
+
+.div1 ul.week li.active{padding:20px 0 10px 0; font-size: 17px;  color:#fff;  font-weight:bold; transform: scale(1.1);  border:2px solid #fff; border-radius:5px;}
+.div1 ul.week li.active span{display:inline-block; margin-top:3px;}
+.div1 ul.week li.active span{color:white; font-weight:bold; border-radius:50%; border:2px solid #fff; width:30px; height:30px; text-align:center; line-height:28px; display:inline-block; margin-top:3px;}
 .div1 ul.nurse li{float:left; padding:10px 0;  font-size:16px;  display:inline-block; width:16.6%; text-align:center;}
 .div1 ul.nurse .profile-img{    margin: 0 auto 5px;
     border: none;
@@ -242,10 +255,10 @@ li.day{background:rgba(0,176,180,0.4);}
 li.evening{background:rgba(5,202,191,0.4);}
 li.night{background:rgba(70,214,172,0.4);}
 li.off{background:rgba(51,58,78,0.4);}
-li.day.active{background:rgba(0,176,180,1);   transform: scale(1.15); border:2px solid #fff; border-radius:5px;}
-li.evening.active{background:rgba(5,202,191,1);   transform: scale(1.15);  border:2px solid #fff; border-radius:5px;}
-li.night.active{background:rgba(70,214,172,1);   transform: scale(1.15);  border:2px solid #fff; border-radius:5px;}
-li.off.active{background:rgba(51,58,78,1);   transform: scale(1.15);  border:2px solid #fff; border-radius:5px;}
+li.day.active{background:rgba(0,176,180,1);   }
+li.evening.active{background:rgba(5,202,191,1);   }
+li.night.active{background:rgba(70,214,172,1); }
+li.off.active{background:rgba(51,58,78,1);  }
 .middle{width:318px;     padding: 0 15px;}
 .div2 ul, .div3 ul{padding:5px 0;}
 .div2 li, .div3 li{padding:5px 20px; font-size:16px;}
@@ -263,3 +276,27 @@ li.off.active{background:rgba(51,58,78,1);   transform: scale(1.15);  border:2px
 .next{right:-13px; top:calc(50% - 13px);}
 .cnt{color:#00b0b4; font-weight:900; font-size:40px;}
 .cnt.death{color:#05cabf;}
+.clock.absolute{top:20px; right:20px;}
+.clock.absolute span{color:#fff}
+.clock .time1, .clock .date1, .clock .date2{ font-weight:lighter; font-size:18px;}
+.clock .time2{font-size:40px;}
+.clock .date2{font-weight:bold;}
+
+
+/*section 2*/
+.text-mint{color:#05cec3;}
+.patient-select{font-weight:bold; font-size:22px; text-align:center; }
+.select-btn{width:24px; height:24px; vertical-align:-5px;}
+.patient-head{margin-bottom:50px; display:inline-block; width:100%;}
+.patient-head p, .patient-head h2{margin:0}
+.patient-chart .chart-top{top:-20px; left:0; width:100%;  }
+.patient-chart .chart-top span{font-size:13px;}
+.patient-chart .chart-top .pull-right{position:absolute; bottom:0px; right:0;}
+.patient-chart .chart-top i{display:inline-block; color:#fff; margin-left:5px; width:40px; height:40px; text-align:center; line-height:40px; font-size:30px; }
+.chart-profile{border:2px solid #05cec3; width:90px; height:90px; margin:20px;}
+.patient-chart .border-top .pull-right.mgt15{width:calc(100% - 130px);}
+.text-sm.text-right{font-size:8px; color:#7c818e; margin:0; width:100%; padding-right:15px;}
+.patient-chart .info li{ color:#222436; font-size:18px;}
+.patient-chart .info i{color:#c0c4c9; font-size:18px; margin-right:5px;}
+.chart-date{margin:20px 25px 20px 0; }
+.chart-date li{font-size:14px}
