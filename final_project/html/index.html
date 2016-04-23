@@ -7,10 +7,12 @@
 
 
 <!-- style -->
+ <link rel="stylesheet" type="text/css" href="../js/lib/jquery.bxslider/jquery.bxslider.css">
  <link rel="stylesheet" type="text/css" href="../css/icon.css">
  <link rel="stylesheet" type="text/css" href="../css/style.css">
 <!-- jQuery -->
 <script src="../js/lib/jquery.js"></script>
+<script src="../js/lib/jquery.bxslider/jquery.bxslider.min.js"></script>
 </head>
 
 
@@ -91,14 +93,17 @@
                 </ul>
             </div>
 			<div class="contents-tab  pull-right">
-                <div class="contents-head text-right">
-					<i class="icon-search"></i>
-					<i class="icon-info"></i>
-					<span class="relative">
+                <div class="contents-head ">
+                <ul class="pull-right">
+					<li><i class="icon-search"></i></li>
+					<li><i class="icon-info"></i></li>
+					<li class="relative">		
 					<i class="icon-noti"></i>
 					<span class="noti absolute circle">1</span>
-					</span>
-					<i class="icon-setting"></i>
+					<img src="../img/popup.png" class="absolute popup"/>
+					</li>
+					<li><i class="icon-setting"></i></li>
+				</ul>
 				</div>
                 <section id="home">
 				
@@ -124,50 +129,22 @@
 					</div>
 					
 					<div class="div1 border-top mgt15 relative mgb15">
-						<h2 class="title">주간듀티 
-						<span class="pull-right mgr15">
-							<span class="day circle">D</span>
-							<span class="evening circle">E</span>
-							<span class="night circle">N</span>
-							<span class="off circle">FF</span>
+						<h2 class="title relative">주간듀티 
+						<span class="pull-right " >
+							<span class="day absolute circle" style=" top:-2px; right:135px;">D</span>
+							<span class="evening absolute  circle" style=" top:-2px; right:95px">E</span>
+							<span class="night absolute  circle" style="top:-2px ; right:55px;">N</span>
+							<span class="off absolute circle" style="top:-2px; right:15px">FF</span>
 						</span>
 						</h2>
 						<ul class="week">
-							<li class="day">
-								일<br/>
-								29<br/>
-								<span>D</span>
-							</li>
-							<li class="evening">			
-								월<br/>
-								30<br/>
-								<span>E</span>
-							</li>
-							<li class="night">
-								화<br/>
-								31<br/>
-								<span>N</span>
-							</li>
-							<li class="off">
-								수<br/>
-								1<br/>
-								<span>FF</span>
-							</li>
-							<li class="day active">
-								목<br/>
-								2<br/>
-								<span>D</span>
-							</li>
-							<li class="evening">
-								금<br/>
-								3<br/>
-								<span>E</span>
-							</li>
-							<li class="night">
-								토<br/>
-								4<br/>
-								<span>N</span>
-							</li>
+							<li class="day">일<p class=" mg0">29</p><span>D</span></li>
+							<li class="evening">월<p class=" mg0">29</p><span>E</span></li>
+							<li class="night">화	<p class=" mg0">29</p><span>N</span></li>
+							<li class="off">수<p class=" mg0">29	</p><span>FF</span></li>
+							<li class="day">목<p class=" mg0">29	</p><span>D</span></li>
+							<li class="evening">금<p class=" mg0">29	</p><span>E</span></li>
+							<li class="night">토<p class=" mg0">	29</p><span>N</span></li>
 						</ul>
 					</div>
 					
@@ -183,69 +160,115 @@
 					</div>
 					
 					<div class="div3 pull-right relative mgt15 border-top">
-						<h2 class="title">메모</h2>
+						<h2 class="title">메모 <img src="../img/plus.png" class="memo_edit"></h2>
 						<div class="content">
-						<img src="../img/button/edit_btn.png" class="edit-btn"/>
 						<ul>
-							<li>도시락 받기 </li>
-							<li>신발 새로 사기</li>
-							<li>...</li>
+							<li>도시락 받기 <span class="checkbox1"><input type="checkbox" id="chk1"/><label for="chk1"></label></span> </li>
+							<li>신발 새로 사기<span class="checkbox1"><input type="checkbox" id="chk2"/><label for="chk2"></label></span> </li>
+							<li class="memo_input">...</li>
 						</ul>
 						</div>
 					</div>
-					<div class="clearfix mgt15"></div>
+					<div class="clearfix "></div>
 					
-					<div class="middle mbg15 pull-left">
-						<div class="div4   mgt15 mbg15 relative border-top">
+					<div class="middle  pull-left">
+						<div class="div4  relative border-top">
 							<h2 class="title">오늘입원환자</h2>
 							<div class="content relative">
-							<a href="#0" class="prev">〈</a>
-							<a href="#0" class="next">〉</a>
-							<img src="../img/ex11.jpg"  class="profile-img  circle pull-left"/>
-							<div class="pull-left info mgt15">
-								<p class="name">안재현</p>
-								<p>32세 / <i class="icon-man"></i></p>
-								<p>RA, OS 병동406</p> 
-							</div>
-							</div>
 							
+							<ul class="bxslider">
+								<li >
+								<img src="../img/ex11.jpg"  class="profile-img  circle pull-left"/>
+								<div class="pull-left info mgt15">
+									<p class="name">안재현</p>
+									<p>32세 / <i class="icon-man"></i></p>
+									<p>RA, OS 병동406</p> 
+								</div>
+	
+								</li>
+								<li >
+								<img src="../img/ex15.png"  class="profile-img  circle pull-left"/>
+								<div class="pull-left info mgt15">
+									<p class="name">최유정</p>
+									<p>18세 / <i class="icon-woman"></i></p>
+									<p>HIVD, OS 병동407</p> 
+								</div>
+								
+								</li>
+								<li >
+								<img src="../img/ex16.png"  class="profile-img  circle pull-left"/>
+								<div class="pull-left info mgt15">
+									<p class="name">이승기</p>
+									<p>30세 / <i class="icon-man"></i></p>
+									<p>Fx, OS 병동401</p> 
+								</div>
+								
+								</li>
+							</ul>
+							</div>
 						</div>
-						<div class="div4  mgt15 relative border-top">
+						<div class="div4  relative border-top">
 						 	<h2 class="title">오늘환자</h2>
 						 	<div class="content relative">
-						 	<a href="#0" class="prev">〈</a>
-							<a href="#0" class="next">〉</a>
-							<img src="../img/ex4.jpg"  class="pull-left  circle profile-img"/>
-							<div class="pull-left info mgt15">
-								<p class="name">송중기</p>
-								<p>32세 / <i class="icon-man"></i></p>
-								<p>RA, OS 병동406</p> 
-							</div>
+						 	
+							<ul class="bxslider2">
+								<li>
+								<img src="../img/ex4.jpg"  class="pull-left  circle profile-img"/>
+								<div class="pull-left info mgt15">
+									<p class="name">송중기</p>
+									<p>32세 / <i class="icon-man"></i></p>
+									<p>RA, OS 병동406</p> 
+								</div>
+	
+								</li>
+								<li >
+								<img src="../img/ex13.png"  class="profile-img  circle pull-left"/>
+								<div class="pull-left info mgt15">
+									<p class="name">김다솜</p>
+									<p>24세 / <i class="icon-woman"></i></p>
+									<p>Fx, OS 병동403</p> 
+								</div>
+								
+								</li>
+								<li >
+								<img src="../img/ex14.png"  class="profile-img  circle pull-left"/>
+								<div class="pull-left info mgt15">
+									<p class="name">김민석</p>
+									<p>25세 / <i class="icon-man"></i></p>
+									<p>AVN, OS 병동403</p> 
+								</div>
+								
+								</li>
+							</ul>
+			
 							</div>
 							
 						</div>
 					</div>
-					<div class="pull-right relative mgt15 mbg15 border-top div5">
+					<div class="pull-right relative border-top div5">
 						<h2 class="title">유행질병</h2>
 						<div class="content text-center">
-						<p style="margin-top:10px">자카바이러스</p>
-						<p style="font-weight:bold">Zica Virus</p>
-						<img src="../img/vir.png" style="width:125px; "/>
+						<p style="margin-top:15px;">자카바이러스
+						<span style="font-weight:bold">(Zica Virus)</span></p>
+						<img src="../img/chart.gif" style="width:160px;" />
+						
 						<p>
 						<span class="pull-left" style="margin-left:50px">
 						사망자<br/>
 						<span class="cnt death">01</span>
 						</span>
-						<span class="pull-left" style="font-size:80px">/</span>
+						<img src="../img/slash.png" style="width:21px; margin-top:6px;margin-right:5px;" class="pull-left"/>
+					
 						<span class="pull-left">
 						보균자<br/>
 						<span class="cnt">06</span>
 						</span>
 						</p>
+						<div class="clearfix mgb15"></div>
 						</div>
 						
 					</div>
-					<div class="div1 mgt15 relative border-top clearfix">
+					<div class="div1 relative border-top clearfix">
 						<h2 class="title">현재 근무하는 간호사</h2>
 						<ul class="nurse">
 						 <li>
@@ -408,6 +431,61 @@
                 	
                 </section>
                 <section id="hospital_room">
+               		<div class="patient-head">
+	                    <h2 class="patient-select">병동406 <img src="../img/button/select_btn.png"class="select-btn"></h2>
+	                	<p class="text-center"><span class="text-mint">OS</span> Ward</p>
+                	</div>
+                	<div class="patient-chart relative">
+	                	<div class="chart-top">	                
+		                	<i class="icon-heart circle absolute day" style="right:200px; top:-45px;"></i>
+		                	<i class="icon-pill2 circle absolute evening" style="right:150px; top:-45px;"></i>
+		                	<i class="icon-pill3 circle absolute night" style="right:100px; top:-45px;"></i>
+		                	<i class="icon-pill4 circle absolute forth" style="right:50px; top:-45px;"></i>
+		                	<i class="icon-pill5 circle absolute fifth" style="right:0px; top:-45px;"></i>     
+	                	</div>
+	                	<div class="div1 relative border-top clearfix">
+							<h2 class="title">현재 근무하는 간호사</h2>
+							<ul class="nurse">
+							 <li>
+							 	<img src="../img/ex7.jpg" class="circle profile-img"/>
+							 	장민지<br/>
+							 	406-1
+							 </li>
+							 <li class="relative">
+							  	<span class="circle absolute orange_noti">IN</span>
+							 	<img src="../img/ex11.jpg" class="circle profile-img"/>
+							 	안재현<br/>
+							 	406-2
+							 </li>
+							  <li class="relative">
+							  	<span class="circle absolute orange_noti">OUT</span>
+							 	<img src="../img/ex4.jpg" class="circle profile-img"/>
+							 	송중기<br/>
+							 	406-3
+							 </li>
+							  <li>
+							 	<img src="../img/ex18.png" class="circle profile-img"/>
+							 	김로마<br/>
+							 	406-4
+							 </li>
+							  <li>
+							 	<img src="../img/ex17.png" class="circle profile-img"/>
+								 차학연<br/>
+							 	406-5
+							 </li>
+							  <li>
+							 	<span class="circle profile-img " style="background: #c6d2d8;"><i class="icon-cate2" style="    line-height: 60px;font-size: 50px;color: #fff;"></i></span>
+							 	-<br/>
+							 	406-6
+							 </li>
+							</ul>
+						</div>
+						<div class="relative" style="margin-top:20px">
+						<img src="../img/room_image.png"  style="max-width:578px; width:578px; ">
+						</div>
+					</div>
+					
+                	
                 </section>
                 <section id="schedule">
                     
@@ -467,23 +545,122 @@ $(function() {
     
     
     
-    $('.category-list li').click(function(){
-    	var cate = $("#"+$(this).attr("data-cate")+"");
-    	$('.contents-tab section').hide();
-    	 $('.category-list li').removeClass('active');
-    	$(cate).css("display","inline-block");
-    	$(this).addClass("active");
-    });
+    
+  });
+  
+  $('.category-list li').click(function(){
+  	var cate = $("#"+$(this).attr("data-cate")+"");
+  	$('.contents-tab section').hide();
+  	 $('.category-list li').removeClass('active');
+  	$(cate).css("display","inline-block");
+  	$(this).addClass("active");
+  });
+  
+  $('.memo_edit').click(function(){
+	  if($(this).attr('src')=="../img/plus.png"){
+		  $('.memo_input').html("<input type='text' class='memo-value' name='memo' >");
+		  $(this).attr('src','../img/check.png');
+	  }else if($(this).attr('src')=="../img/check.png"){
+		  var memo_value = $('.memo-value').val();
+		  $('.memo_input').html(memo_value +" <span class='checkbox1'><input type='checkbox' id='chk3'/><label for='chk3'></label></span> ")
+		  $(this).attr('src',"../img/plus.png");
+	  }
+  });
+  
+  $('.title .circle.day').click(function(){
+	  if($(this).hasClass('active')){
+		  $(this).removeClass('active');
+		  $(this).html('D');
+	  }else{
+		  $(this).addClass('active');
+		  $(this).html('데이');
+	  }
+  });
+  $('.title .circle.evening').click(function(){
+	  if($(this).hasClass('active')){
+		  $(this).html('E').removeClass('active');
+	  }else{
+		  $(this).html('이브닝').addClass('active');
+	  }
+  });
+  $('.title .circle.night').click(function(){
+	  if($(this).hasClass('active')){
+		  $(this).html('N').removeClass('active');
+	  }else{
+		  $(this).html('나잇').addClass('active');
+	  }
+  });
+  $('.title .circle.off').click(function(){
+	  if($(this).hasClass('active')){
+		  $(this).html('FF').removeClass('active');
+	  }else{
+		  $(this).html('오프').addClass('active');
+	  }
   });
   
   
+  $('.chart-top .icon-heart').click(function(){
+	  if($(this).hasClass('active')){
+		  $(this).removeClass('active').addClass('icon-heart');
+		  $(this).html('');
+	  }else{
+		  $(this).addClass('active').removeClass('icon-heart');
+		  $(this).html('절대<br/>안정');
+	  }
+  });
+  $('.chart-top .icon-pill2').click(function(){
+	  if($(this).hasClass('active')){
+		  $(this).html('').removeClass('active').addClass('icon-pill2');
+	  }else{
+		  $(this).html('약복용').addClass('active').removeClass('icon-pill2');
+	  }
+  });
+  $('.chart-top .icon-pill3').click(function(){
+	  if($(this).hasClass('active')){
+		  $(this).html('').removeClass('active').addClass('icon-pill3');
+	  }else{
+		  $(this).html('링겔').addClass('active').removeClass('icon-pill3');
+	  }
+  });
+  $('.chart-top .icon-pill4').click(function(){
+	  if($(this).hasClass('active')){
+		  $(this).html('').removeClass('active').addClass('icon-pill4');
+	  }else{
+		  $(this).html('주사').addClass('active').removeClass('icon-pill4');
+	  }
+  });
+  $('.chart-top .icon-pill5').click(function(){
+	  if($(this).hasClass('active')){
+		  $(this).html('').removeClass('active').addClass('icon-pill5');
+	  }else{
+		  $(this).html('수술').addClass('active').removeClass('icon-pill5');
+	  }
+  });
+  
+  $('.bxslider').bxSlider({
+	  auto: true,
+	  pager:false
+  });
+  $('.bxslider2').bxSlider({
+	  auto: true,
+	  pager:false
+  });
+  $('.icon-noti').click(function(){
+	  if($('.popup').css('display')=="none"){
+		 $('.popup').show();
+	 	$('.noti').hide();
+	  }else{
+			 $('.popup').hide();
+	  }
+  });
+
 
   
 });
 function startTime() {
     var today = new Date();
     var h = today.getHours();
-    var m = today.getMinutes();
+    var mm = today.getMinutes();
     var s = today.getSeconds();
     var Y = today.getFullYear();
     var m = today.getMonth()+1;
@@ -500,6 +677,7 @@ function startTime() {
     weekday[6] = "Sat";
 
     m = checkTime(m);
+    mm = checkTime(mm);
     s = checkTime(s);
     /*document.getElementById('clock').innerHTML =
     h + ":" + m + ":" + s;*/
@@ -514,17 +692,28 @@ function startTime() {
     }else{
     	$('#timegif').css("background-image","url('../img/noon.png')");
     }
-    
+
     
     $('.clock .time1').text(time);
-    $('.clock .time2').text(h+":"+m);
+    $('.clock .time2').text(h+":"+mm);
     $('.clock .date1').text(Y+'.'+m+'.'+dd);
     $('.clock .date2').text(weekday[d]);
-    
+    $('ul.week li').removeClass('active');
+    $('ul.week li:eq('+d+')').addClass('active');
+    $('ul.week li:eq('+d+') p').html(dd);
+    for(var i=0 ; i<7; i++){
+    	if(i>d){
+    		$('ul.week li:eq('+i+') p').html(dd+(i-d));
+    	}else if(i<d){
+    		$('ul.week li:eq('+i+') p').html(dd-(d-i));
+    	}
+    }
     var t = setTimeout(startTime, 6000);
 }
 function checkTime(i) {
-    if (i < 10) {i = "0" + i}; // 숫자가 10보다 작을 경우 앞에 0을 붙여줌
+    if (i < 10){
+    	i = "0" + i;
+    }; // 숫자가 10보다 작을 경우 앞에 0을 붙여줌
     return i;
 }
 $(document).ready(function() {
@@ -539,7 +728,8 @@ $(document).ready(function() {
 	    window.scrollTo(0,1);
 	  }
 
-	});
+	  
+});
 </script>
 </body>
 </html>

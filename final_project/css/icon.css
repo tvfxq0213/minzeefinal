@@ -110,4 +110,15 @@
 .icon-woman:before {
     content: "\e91b";
 }
-
+.icon-pill2:before {
+    content: "\e91c";
+}
+.icon-pill3:before {
+    content: "\e91d";
+}
+.icon-pill4:before {
+    content: "\e91e";
+}
+.icon-pill5:before {
+    content: "\e91f";
+}
