@@ -434,6 +434,19 @@
                		<div class="patient-head">
 	                    <h2 class="patient-select">병동406 <img src="../img/button/select_btn.png"class="select-btn"></h2>
 	                	<p class="text-center"><span class="text-mint">OS</span> Ward</p>
+	                	<div class="select-list border-top">
+	                		<ul>
+	                			<li>OS Ward 병동 401</li>
+	                			<li>OS Ward 병동 402</li>
+	                			<li>OS Ward 병동 403</li>
+	                			<li>OS Ward 병동 404</li>
+	                			<li>OS Ward 병동 405</li>
+	                			<li>OS Ward 병동 406</li>
+	                			<li>OS Ward 병동 407</li>
+	                			<li>OS Ward 병동 408</li>
+	                			<li>OS Ward 병동 409</li>
+	                		</ul>
+	                	</div>
                 	</div>
                 	<div class="patient-chart relative">
 	                	<div class="chart-top">	                
@@ -481,7 +494,43 @@
 							</ul>
 						</div>
 						<div class="relative" style="margin-top:20px">
-						<img src="../img/room_image.png"  style="max-width:578px; width:578px; ">
+							<img src="../img/room_image.png"  style="max-width:578px; width:578px; ">
+							<div class="absolute balloon" style="left:218px; top:65px">
+								<i class="icon-heart" style="top:4px; left:4px;"></i>
+								<img src="../img/balloon1.png" />
+							</div>
+							<div class="absolute balloon" style="left:218px; top:300px">
+							<i class="icon-pill4"></i>
+								<img src="../img/balloon4.png" />
+							</div>
+							<div class="absolute balloon" style="left:218px; top:537px">
+								<i class="icon-pill3"></i>
+								<img src="../img/balloon3.png" />
+							</div>
+							<div class="absolute balloon" style="left:322px; top:65px">
+								<i class="icon-pill5"></i>
+								<img src="../img/balloon5.png" />
+							</div>
+							<div class="absolute balloon" style="left:322px; top:300px">
+								<i class="icon-pill2"></i>
+								<img src="../img/balloon2.png"/>
+							</div>
+							<div class="absolute bar-wrap minute60-wrap"style="left:343px; top:240px">
+								<div class="bar"></div>
+								<div class="minute60">00:00</div>
+							</div>
+							<div class="absolute bar-wrap minute2-wrap" style="left:66px; top:477px">
+								<div class="bar"></div>
+								<div class="minute2">00:00</div>
+							</div>
+							<div class="absolute bar-wrap minute60-wrap" style="left:66px; top:713px">
+								<div class="bar"></div>
+								<div class="minute60">00:00</div>
+							</div>
+							
+								<div class="minute"></div>
+							</div>
+							
 						</div>
 					</div>
 					
@@ -653,8 +702,27 @@ $(function() {
 			 $('.popup').hide();
 	  }
   });
+  
+  $('#hospital_room .nurse li').click(function(){
+	  var index = $("#hospital_room .nurse li").index(this);
+	 // var ballon_top = $('.balloon:eq(' + index + ')').css("top");
+	 if($('.balloon:eq(' + index + ')').css("margin-top")=="0px"){
+	  	$('.balloon:eq(' + index + ')').animate({"margin-top":"-5px"},200);
+	 }else{
+		 $('.balloon:eq(' + index + ')').animate({"margin-top":"0px"},200);
+	 }
 
-
+	  
+  });
+  
+  $('.select-btn').click(function(){
+	 if($('.select-list').css('display')=="none"){
+		 $('.select-list').show();
+	 }else{
+		 $('.select-list').hide();
+	 }
+  });
+  
   
 });
 function startTime() {
@@ -730,6 +798,85 @@ $(document).ready(function() {
 
 	  
 });
+//section 3 timer
+$(document).ready(function(){
+	//초기값
+	
+	var minute2 = 2;
+	var minute60 = 60;
+	var second2 = 0;
+	var second60 = 00;	
+	// 초기1
+	$(".minute2").html("00:00");
+	$(".minute60").html("00:00");
+	
+	var timer2 = setInterval(function () {
+			// 설정
+			if(second2 == 0 && minute2 == 0 ){
+				
+				//clearInterval(timer); /* 타이머 종료 */
+				// 초기화
+				 minute2 = 2;
+				 second2 = 0;
+				$(".minute2").html("00:00");
+				$('.minute2-wrap .bar').css("width","0");
+				$('.bar-wrap .minute').css('left',"-23px");
+			}else{
+				second2--;
+				
+				// 분처리
+				if(second2 < 0){
+					minute2--;
+					second2 = 59;
+				}				
+				var s2 = 120 - (60*minute2) - second2 ;
+				var width2 = 170 * (s2 /120) ;		
+				if(width2>136){
+					$('.minute2-wrap .bar').css('background',"#ff7610");
+				}
+				$(".minute2").html(minute2+":"+second2);
+				$('.minute2-wrap .bar').css('width',width2+"px");
+				$('.bar-wrap .minute2').css('left',width2-23+"px");
+				
+			}
+    	}, 1000); /* millisecond 단위의 인터벌 */
+    	
+
+	var timer60 = setInterval(function () {
+			// 설정
+			if(second60 == 0 && minute60 == 0 ){
+				 minute60 = 60;
+				 second2 = 00;
+				//clearInterval(timer); /* 타이머 종료 */
+				// 초기화
+				$('.minute60-wrap .bar').css('background',"#05cec3");
+				$(".minute60").html("00:00");
+				$('.minute60-wrap .bar').css("width","0");
+				$('.bar-wrap .minute60').css('left',"-23px");
+			}else{
+				second60--;
+				
+				// 분처리
+				if(second60 < 0){
+					minute60--;
+					second60 = 59;
+				}
+				
+				var s60 = 3600 - (60*minute60) - second60 ;
+				var width60 = 170 * (s60 /3600) ;
+				if(width60>136){
+					$('.minute60-wrap .bar').css('background',"#ff7610");
+				} 
+				$(".minute2").html(minute2+":"+second60);
+				$(".minute60").html(minute60+":"+second60);
+				$('.minute60-wrap .bar').css('width',width60+"px");
+				$('.bar-wrap .minute60').css('left',width60-23+"px");
+				
+			}
+    	}, 1000); /* millisecond 단위의 인터벌 */
+});
+
+
 </script>
 </body>
 </html>
