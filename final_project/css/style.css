@@ -322,7 +322,7 @@ div.border-top{border-radius: 10px 10px 0 0;
 .border-top .content p{margin:0;}
 div.timegif{background-size:cover; border:none; background-repeat-y:none; }
 .div1{width:100%; display:inline-block}
-.div1 .title .circle{display:inline-block; width:33px; height:33px; font-weight:bold; color:#fff; line-height:33px; text-align:center;}
+.div1 .title .circle, ul.week .circle{display:inline-block; width:33px; height:33px; font-weight:bold; color:#fff; line-height:33px; text-align:center;}
 .div1 .title .circle.active{line-height:30px; font-size:10px; font-weight:normal}
 .div1 ul{border:2px solid #fff; background:#fff; border-bottom:none; border-radius:5px; ; width:100%;display:inline-block; }
 .div1 ul.week li{float:left; margin-bottom:-5px; line-height:1.5; padding:20px 0; color:rgba(51,58,78,0.5); display:inline-block; width:14.2%; text-align:center;}
@@ -435,10 +435,19 @@ li.off.active{background:rgba(51,58,78,1);  }
 .select-list:after{ background: url(../img/triangle.png); content:""; width:9px; height:7px; position:absolute; top:-7px; right:10px; }
 .select-list ul{margin-left:20px; height:270px; overflow-y:auto; }
 .select-list ul li{padding:10px 20px; background:#fff; border-bottom:1px solid #f5f5f5;}
-.select-list ul li:hover , .select-list ul li:focus{background:#ff7610; color:#fff;}
+.select-list ul li:hover , .select-list ul li:focus,.select-list ul li.active{background:#ff7610; color:#fff;}
 
+.today{background:#ff7610; color:#fff; border:1px solid #ff7610; font-size:12px;}
+.div1 .title .circle.active.today{background:rgba(255,118,16,.5); font-size:12px;}
+.border-top ul.title{padding:0; margin:0;}
+ul.title li{float:left; width:14.28%; padding:20px; text-align:center;}
+ul.week{display:inline-block; width:100%;background:#fff; }
+ul.week li{float:left; width:14.28%; height:135px; diplay:inline-block;  }
+ul.week li.opacity{opacity:0.6;}
+ul.week li .dd{padding:5px 10px; display:block;}
+ul.week li .bg-y{display:block; width:100%; background:#fdf690;  line-height:1.4; padding-left:10px;font-size:14px;}
+ul.week li .bg-g{display:block; width:100%; background:#7fd77f;  line-height:1.4; padding-left:10px;font-size:14px;}
+ul.week li .bg-p{display:block; width:100%; background:#ffd7d9;  line-height:1.4; padding-left:10px;font-size:14px;}
+ul.week li .bg-none{display:block; width:100%;   line-height:1.4; padding-left:10px;font-size:14px;}
 
-
-
-
-
+ul.week li p{margin:5px 0 10px ; text-align:center;}
