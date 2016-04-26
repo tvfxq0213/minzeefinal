@@ -240,7 +240,7 @@ img{width:50%; max-width:402px;}
           animation: none;
 }
 
-.login_form{margin-top:100px; width:615px; height:565px; display:inline-block; background:#2e374c; border-radius:20px;  padding:20px; }
+.login_form{margin-top:100px; width:615px; height:565px; display:inline-block; background:rgba(6,18,39,0.2); border-radius:20px;  padding:20px; }
 .login_form form{margin:100px 50px 25px 50px;}
 .login_form input[type="text"],.login_form input[type="password"]{ font-size:18px; border:none; min-width:400px; display:block; margin-bottom:13px; margin-left:80px; padding:15px; }
 .login a.bg-grad{width:calc(100% - 40px); display:inline-block; font-size:22px; background:url('../img/bg-btn.png'); background-size: 100% ; color:#fff; font-weight:700; border:1px solid #fff; margin-top:30px; padding:20px; border-radius:5px;}
@@ -298,7 +298,7 @@ display:inline-block;
 .noti{top:8px; right:6px; background:#ff7610; line-height:1.2; color:#fff; border:1px solid #fff; font-size:8px; text-align:center;  width:15px; height:15px; }
 .popup{z-index:5; display:none; top:45px; right:-5px; width:240px; }
 .contents-tab section{width:100%; padding:60px 35px; height: calc(100% - 45px); background:#c6d2d8;}
-.timegif img{width:100%; max-width:100%; margin-bottom:-5px;}
+.timegif img{width:100%; max-width:100%; margin-bottom:-3px;}
 div.border-top{border-radius: 10px 10px 0 0; 
 -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
 	-moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
@@ -307,7 +307,7 @@ div.border-top{border-radius: 10px 10px 0 0;
 	background:#eff0f2;
 	border:1px solid #fff;
 	}
-.memo-value{border:1ps solid #fff; width:80%;}
+.memo-value{border:1px solid #fff; width:80%;}
 .memo_input{line-height:1.6;}
 .memo_edit{position:absolute; top:10px; right:15px;width:36px; cursor:pointer; }
 .border-top .title{padding-left:20px; margin:15px 0; font-size:18px; font-weight:900; color:#222436;}
@@ -320,7 +320,7 @@ div.border-top{border-radius: 10px 10px 0 0;
     top: 21px;}
 .border-top .content{display:inline-block; width:100%; background:#fff;}
 .border-top .content p{margin:0;}
-div.timegif{background-size:cover; border:none; background-repeat-y:none; }
+div.timegif{background-size:cover; background-repeat: no-repeat; }
 .div1{width:100%; display:inline-block}
 .div1 .title .circle, ul.week .circle{display:inline-block; width:33px; height:33px; font-weight:bold; color:#fff; line-height:33px; text-align:center;}
 .div1 .title .circle.active{line-height:30px; font-size:10px; font-weight:normal}
@@ -346,9 +346,9 @@ div.timegif{background-size:cover; border:none; background-repeat-y:none; }
 .forth{background:#80e9a3;}
 .fifth{background:#61f2b7;}
 .active.day{background:rgba(0,176,180,0.4); border:1px solid #00b0b4;}
-.active.evening{background:rgba(5,202,191,0.4);#05cabf; border:1px solid #05cabf;}
+.active.evening{background:rgba(5,202,191,0.4); border:1px solid #05cabf;}
 .active.night{background:rgba(70,214,172,0.4);  border:1px solid #46d6ac;}
-.active.off{background:rgba(51,58,78,0.4);:#333a4e; border:1px solid #333a4e}
+.active.off{background:rgba(51,58,78,0.4); border:1px solid #333a4e}
 .active.forth{border:1px solid #80e9a3;background:rgba(128,233,163,0.5)}
 .active.fifth{border:1px solid #61f2b7;background:rgba(97,242,183,0.5)}
 li.day{background:rgba(0,176,180,0.5); border:none;}
@@ -429,7 +429,7 @@ li.off.active{background:rgba(51,58,78,1);  }
 .balloon img{width:40px;}
 .balloon i{position:absolute; top:3px; left:4px;font-size:33px; color:#fff; }
 .bar-wrap{width:170px;}
-.bar{background:#05cec3; height:10px; width:0px;}
+.bar{background:#05cec3; height:9px; width:0px;}
 .bar-wrap .minute2, .bar-wrap .minute60{left:-23px;color:#fff; font-size:15px; line-height:20px; background:url('../img/balloon6.png'); position:absolute;  background-size:47px 25px; width:47px; height:25px; text-align:center; top: -30px;}
 .select-list.border-top{display:none; border-radius:10px 0 0 10px; top:38px; right:232px;width:300px; background:#333a4e; position:absolute; z-index:5;}
 .select-list:after{ background: url(../img/triangle.png); content:""; width:9px; height:7px; position:absolute; top:-7px; right:10px; }
@@ -451,8 +451,8 @@ li.off.active{background:rgba(51,58,78,1);  }
 .div1 .title .circle.active.today{background:rgba(255,118,16,.5); font-size:12px;}
 .border-top ul.title{padding:0; margin:0;}
 ul.title li{float:left; width:14.28%; padding:20px; text-align:center;}
-ul.week{display:inline-block; width:100%;background:#fff; }
-ul.week li{float:left; width:14.28%; height:135px; diplay:inline-block;  }
+ul.week{display:inline-block; width:100%;background:#fff; margin-bottom:-3px;}
+ul.week li{float:left; width:14.28%; height:135px; display:inline-block;  }
 ul.week li.opacity{opacity:0.6;}
 ul.week li .dd{padding:10px; display:block;}
 ul.week li .bg-y{display:block; width:100%; background:#fdf690;  line-height:1.4; padding-left:10px;font-size:14px;}
