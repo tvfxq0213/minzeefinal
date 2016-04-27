@@ -567,10 +567,10 @@
                             <span class="pull-right " >
                                     <img src="../img/plus.png" class="absolute"  style=" width:33px; top:-40px; left:0px;">
                                     <span class="absolute circle today" style="top:-40px; left:40px;">오늘</span>
-                                    <span class="day absolute circle" style=" top:-40px; right:135px;">D</span>
-                                    <span class="evening absolute  circle" style=" top:-40px; right:95px">E</span>
-                                    <span class="night absolute  circle" style="top:-40px ; right:55px;">N</span>
-                                    <span class="off absolute circle" style="top:-40px; right:15px">FF</span>
+                                    <span class="day absolute circle" style=" top:-40px; right:120px;">D</span>
+                                    <span class="evening absolute  circle" style=" top:-40px; right:80px">E</span>
+                                    <span class="night absolute  circle" style="top:-40px ; right:40px;">N</span>
+                                    <span class="off absolute circle" style="top:-40px; right:0px">FF</span>
                             </span>
                             </h2>
                             <ul class="nurse">
@@ -622,7 +622,7 @@
 								<li class="opacity"><span class="dd">30</span></li>
 								<li class="opacity"><span class="dd">31</span></li>
 								<li><span class="dd">1</span><p><span class="circle evening">E</span></p><span class="bg-y">세미나</span></li>
-								<li><span class="dd">2</span><p><span class="circle day">D</span></p><span class="bg-y">세미나</span></li>
+                                                                <li class="relative"><span class="dd">2</span><p><span class="circle day">D</span></p><span class="bg-y">세미나</span><div class="li_today"></div></li>
 								<li><span class="dd">3</span><p><span class="circle evening">E</span></p></li>
 								<li><span class="dd">4</span><p><span class="circle night">N</span></p></li>
 							</ul>
@@ -867,8 +867,10 @@ $(function() {
   $('.title .circle.today').click(function(){
 	  if($(this).hasClass('active')){
 		  $(this).removeClass('active');
+                  $('.li_today').hide();
 	  }else{
 		  $(this).addClass('active');
+                   $('.li_today').show();
 	  }
   });
   

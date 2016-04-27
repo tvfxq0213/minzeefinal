@@ -325,7 +325,7 @@ div.border-top{border-radius: 10px 10px 0 0;
     background: #00b0b4;
     left: 0;
     top: 18px;}
-#home .border-top .div1 .title:before{    position: absolute;
+#home .border-top.div1 .title:before{    position: absolute;
     content: "";
     width: 3px;
     height: 20px;
@@ -473,7 +473,7 @@ ul.week li .bg-y{display:block; width:100%; background:#fdf690;  line-height:1.4
 ul.week li .bg-g{display:block; width:100%; background:#7fd77f;  line-height:1.4; padding-left:10px;font-size:14px;}
 ul.week li .bg-p{display:block; width:100%; background:#ffd7d9;  line-height:1.4; padding-left:10px;font-size:14px;}
 ul.week li .bg-none{display:block; width:100%;   line-height:1.4; padding-left:10px;font-size:14px;}
-
+.li_today{width:100%; height:100%; border:1px solid #ff7610; top:0; left:0; background:transparent; position:absolute; display:none; }
 ul.week li p{margin:0px 0 10px ; text-align:center;}
 .slider_patient li{width:577px !important; }
 #patient .bx-viewport{height:1000px !important;}
