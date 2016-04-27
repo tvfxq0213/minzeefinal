@@ -332,7 +332,7 @@ div.border-top{border-radius: 10px 10px 0 0;
     height: 20px;
     background: #00b0b4;
     left: 0;
-    top: 19px;}
+    top: 18px;}
 .border-top .title{padding-left:20px; margin:15px 0; font-size:18px; font-weight:900; color:#222436;}
 .border-top .title:before{    position: absolute;
     content: "";
@@ -340,14 +340,14 @@ div.border-top{border-radius: 10px 10px 0 0;
     height: 20px;
     background: #00b0b4;
     left: 0;
-    top: 19px;}
+    top: 18px;}
 #home .border-top.div1 .title:before{    position: absolute;
     content: "";
     width: 4px;
     height: 20px;
     background: #00b0b4;
     left: 0;
-    top: 4px;}
+    top: 3px;}
 .border-top .content{display:inline-block; width:100%; background:#fff;}
 .border-top .content p{margin:0;}
 div.timegif{background-size:cover; background-repeat: no-repeat; }
