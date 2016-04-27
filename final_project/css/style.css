@@ -465,7 +465,7 @@ li.off.active{background:rgba(51,58,78,1);  }
 .div1 .title .circle.active.today{background:rgba(255,118,16,.5); font-size:12px;}
 .border-top ul.title{padding:0; margin:0;}
 ul.title li{float:left; width:14.28%; padding:20px; text-align:center;}
-ul.week{display:inline-block; width:100%;background:#fff; margin-bottom:-1px;}
+ul.week{display:inline-block; width:100%;background:#fff; margin-bottom:-2px;}
 ul.week li{float:left; width:14.28%; height:137px; display:inline-block;  }
 ul.week li.opacity{opacity:0.6;}
 ul.week li .dd{padding:10px; display:block;}
