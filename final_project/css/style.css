@@ -184,7 +184,7 @@ img{width:50%; max-width:402px;}
 	  position: relative;
 	height:100%; width:100%; padding-top:120px; overflow:hidden; color:#808080; display:inline-block; /*display:none;*/}
 
-.popup_img{min-width:100%; width:100%; position:absolute; display:none; top:0; left:0;}
+.popup_img{min-width:60%; width:60%; position:absolute; display:none; top:60%; left:20%; z-index:4;}
 /*.login.inactive {
   opacity: 0;
   -webkit-transform: scale(1.1);
@@ -304,6 +304,7 @@ display:inline-block;
 .noti{top:8px; right:6px; background:#ff7610; line-height:1.2; color:#fff; border:1px solid #fff; font-size:8px; text-align:center;  width:15px; height:15px; }
 .popup{z-index:5; display:none; top:45px; right:-5px; width:240px; }
 .contents-tab section{width:100%; padding:60px 35px; height: calc(100% - 45px); background:#c6d2d8;}
+.timegif {margin-bottom:20px;}
 .timegif img{width:100%; max-width:100%; margin-bottom:-3px;}
 div.border-top{border-radius: 10px 10px 0 0; 
 -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
@@ -315,7 +316,7 @@ div.border-top{border-radius: 10px 10px 0 0;
 	}
 .memo-value{border:none; box-shadow:none; border-bottom:1px solid #f6f6f6;  width:80%;}
 .memo_input{line-height:1.6;}
-.memo_edit{position:absolute; top:10px; right:15px;width:36px; cursor:pointer; }
+.memo_edit{position:absolute; top:10px; right:15px;width:35px; cursor:pointer; }
 .border-top .title{padding-left:20px; margin:15px 0; font-size:18px; font-weight:900; color:#222436;}
 .border-top .title:before{    position: absolute;
     content: "";
@@ -323,12 +324,19 @@ div.border-top{border-radius: 10px 10px 0 0;
     height: 20px;
     background: #00b0b4;
     left: 0;
-    top: 21px;}
+    top: 18px;}
+#home .border-top .div1 .title:before{    position: absolute;
+    content: "";
+    width: 3px;
+    height: 20px;
+    background: #00b0b4;
+    left: 0;
+    top: 5px;}
 .border-top .content{display:inline-block; width:100%; background:#fff;}
 .border-top .content p{margin:0;}
 div.timegif{background-size:cover; background-repeat: no-repeat; }
 .div1{width:100%; display:inline-block}
-.div1 .title .circle, ul.week .circle{display:inline-block; width:33px; height:33px; font-weight:bold; color:#fff; line-height:33px; text-align:center;}
+.div1 .title .circle, ul.week .circle{display:inline-block; width:35px; height:35px; font-weight:bold; color:#fff; line-height:35px; text-align:center;}
 .div1 .title .circle.active{line-height:30px; font-size:10px; font-weight:normal}
 .div1 ul{border:2px solid #fff; background:#fff; border-bottom:none; border-radius:5px; ; width:100%;display:inline-block; }
 .div1 ul.week li{float:left; margin-bottom:0px; line-height:1.5; padding:30px 0; height: 135px; color:rgba(51,58,78,0.5); display:inline-block; width:14.28%; text-align:center;}
@@ -373,7 +381,7 @@ li.off.active{background:rgba(51,58,78,1);  }
 .div3{width:215px; display:inline-block}
 .div4{width:343px; display:inline-block; margin-bottom:20px;}
 .div5{width:215px; display:inline-block;margin-top:20px; margin-bottom:20px;}
-.div4 .content{margin-bottom:-5px;}
+.div4 .content{margin-bottom:-1px;}
 .div4 .profile-img{width:60px; height:60px; margin:20px 15px 20px 40px;; border:none;}
 .div4 .info p, .div4 .info i{font-size:16px;}
 .div4 .info i{color:#00b0b4;}
@@ -409,14 +417,14 @@ li.off.active{background:rgba(51,58,78,1);  }
 /*section 2*/
 .text-mint{color:#05cec3;}
 .select-btn{width:24px; height:24px; vertical-align:-5px;}
-.patient-head{position:relative; margin-bottom:55px; display:inline-block; width:100%;}
+.patient-head{position:relative; margin-bottom:50px; display:inline-block; width:100%;}
 .patient-head p, .patient-head h2{margin:0}
 .patient-head .patient-select{font-weight:bold; margin-bottom:10px; font-size:22px; text-align:center; }
 
 .patient-chart .chart-top{top:-20px; left:0; width:100%;  }
 .patient-chart .chart-top span{font-size:13px;}
 .patient-chart .chart-top .pull-right{position:absolute; bottom:0px; right:0;}
-.patient-chart .chart-top i{display:inline-block; color:#fff; margin-left:5px; width:40px; height:40px; text-align:center; line-height:40px; font-size:30px; }
+.patient-chart .chart-top i{display:inline-block; color:#fff; margin-left:5px; width:35px; height:35px; text-align:center; line-height:35px; font-size:25px; }
 .chart-profile{border:2px solid #05cec3; width:90px; height:90px; margin:20px;}
 .patient-chart .border-top .pull-right.mgt15{width:calc(100% - 130px);}
 .text-sm.text-right{font-size:8px; color:#7c818e; margin:0; width:100%; padding-right:15px;}
@@ -433,7 +441,7 @@ li.off.active{background:rgba(51,58,78,1);  }
 .chart-top .circle.active{font-size:11px; font-style:normal;  line-height:38px;}
 .chart-top .day.active.circle{padding-top:8px; line-height:1;}
 .balloon img{width:40px;}
-.balloon i{position:absolute; top:3px; left:4px;font-size:33px; color:#fff; }
+.balloon i{position:absolute; top:6px; left:6px;font-size:25px; color:#fff; }
 .bar-wrap{width:170px;}
 .bar{background:#05cec3; height:9px; width:0px;}
 .bar-wrap .minute2, .bar-wrap .minute60{left:-23px;color:#fff; font-size:15px; line-height:20px; background:url('../img/balloon6.png'); position:absolute;  background-size:47px 25px; width:47px; height:25px; text-align:center; top: -30px;}
@@ -467,6 +475,6 @@ ul.week li .bg-p{display:block; width:100%; background:#ffd7d9;  line-height:1.4
 ul.week li .bg-none{display:block; width:100%;   line-height:1.4; padding-left:10px;font-size:14px;}
 
 ul.week li p{margin:0px 0 10px ; text-align:center;}
-.slider_patient li{width:557px !important; }
-#patient .bx-viewport{height:980px !important;}
+.slider_patient li{width:577px !important; }
+#patient .bx-viewport{height:1000px !important;}
 #patient .bx-controls-direction{display:none;}
