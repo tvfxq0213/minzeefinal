@@ -89,7 +89,7 @@ li{margin:0; padding:0; list-style:none;}
 .inline-block{display: inline-block;}
 .mgl15{margin-left: 15px}
 .mgr15{margin-right:15px}
-.mgt15{margin-top: 15px;}
+.mgt15{margin-top: 18px;}
 .mgb15{margin-bottom: 15px;}
 .mg0{margin:0 !important;}
 img{width:50%; max-width:402px;}
@@ -304,7 +304,7 @@ display:inline-block;
 .noti{top:8px; right:6px; background:#ff7610; line-height:1.2; color:#fff; border:1px solid #fff; font-size:8px; text-align:center;  width:15px; height:15px; }
 .popup{z-index:5; display:none; top:45px; right:-5px; width:240px; }
 .contents-tab section{width:100%; padding:60px 35px; height: calc(100% - 45px); background:#c6d2d8;}
-.timegif {margin-bottom:20px;}
+.timegif {margin-bottom:18px;}
 .timegif img{width:100%; max-width:100%; margin-bottom:-3px;}
 div.border-top{border-radius: 10px 10px 0 0; 
 -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
@@ -314,24 +314,40 @@ div.border-top{border-radius: 10px 10px 0 0;
 	background:#eff0f2;
 	border:1px solid #fff;
 	}
+        div.border-top2{border-radius: 10px 10px 0 0; 
+-webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+	box-sizing:border-box;
+	background:#eff0f2;
+	border:1px solid #fff;
+	}
 .memo-value{border:none; box-shadow:none; border-bottom:1px solid #f6f6f6;  width:80%;}
 .memo_input{line-height:1.6;}
-.memo_edit{position:absolute; top:10px; right:15px;width:35px; cursor:pointer; }
+.memo_edit{position:absolute; top:8px; right:15px;width:35px; cursor:pointer; }
+.border-top2 .title{padding-left:20px; margin:15px 0; font-size:18px; font-weight:900; color:#222436;}
+.border-top2 .title:before{    position: absolute;
+    content: "";
+    width: 4px;
+    height: 20px;
+    background: #00b0b4;
+    left: 0;
+    top: 19px;}
 .border-top .title{padding-left:20px; margin:15px 0; font-size:18px; font-weight:900; color:#222436;}
 .border-top .title:before{    position: absolute;
     content: "";
-    width: 3px;
+    width: 4px;
     height: 20px;
     background: #00b0b4;
     left: 0;
-    top: 18px;}
+    top: 19px;}
 #home .border-top.div1 .title:before{    position: absolute;
     content: "";
-    width: 3px;
+    width: 4px;
     height: 20px;
     background: #00b0b4;
     left: 0;
-    top: 5px;}
+    top: 4px;}
 .border-top .content{display:inline-block; width:100%; background:#fff;}
 .border-top .content p{margin:0;}
 div.timegif{background-size:cover; background-repeat: no-repeat; }
