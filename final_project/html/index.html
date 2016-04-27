@@ -18,8 +18,9 @@
 
 <body onload="startTime();">
 	<div class="container">
-		<div class="login text-center"  >
+		<div class="login text-center relative"  >
 		<img src="../img/logo.png" alt="Pocket ward" title="pocket ward">
+		<img src="../img/login_popup.png" class="popup_img" alt="서비스 준비중" title="서비스 준비중">
 		<div class="login_form relative">
 			<div class="bg_login absolute img-center">
 				<form>
@@ -39,7 +40,7 @@
 				</form>
 				
 				<div class="">
-					<a href="#0">아이디/비밀번호 찾기</a>
+					<a href="#0" class="open_popup">아이디/비밀번호 찾기</a>
                                         <span class="mgl15 mgr15">|</span>
 					<a href="#0">회원가입</a>
 				</div>
@@ -499,11 +500,11 @@
 								<i class="icon-heart" style="top:4px; left:4px;"></i>
 								<img src="../img/balloon1.png" />
 							</div>
-							<div class="absolute balloon" style="left:218px; top:300px">
+							<div class="absolute balloon" style="left:218px; top:293px">
 							<i class="icon-pill4"></i>
 								<img src="../img/balloon4.png" />
 							</div>
-							<div class="absolute balloon" style="left:218px; top:537px">
+							<div class="absolute balloon" style="left:218px; top:522px">
 								<i class="icon-pill3"></i>
 								<img src="../img/balloon3.png" />
 							</div>
@@ -511,7 +512,7 @@
 								<i class="icon-pill5"></i>
 								<img src="../img/balloon5.png" />
 							</div>
-							<div class="absolute balloon" style="left:318px; top:300px">
+							<div class="absolute balloon" style="left:318px; top:293px">
 								<i class="icon-pill2"></i>
 								<img src="../img/balloon2.png"/>
 							</div>
@@ -519,11 +520,11 @@
 								<div class="bar"></div>
 								<div class="minute60">00:00</div>
 							</div>
-							<div class="absolute bar-wrap minute2-wrap" style="left:66px; top:468px">
+							<div class="absolute bar-wrap minute2-wrap" style="left:70px; top:467px">
 								<div class="bar"></div>
 								<div class="minute2">00:00</div>
 							</div>
-							<div class="absolute bar-wrap minute60-wrap" style="left:66px; top:697px">
+							<div class="absolute bar-wrap minute60-wrap" style="left:70px; top:695px">
 								<div class="bar"></div>
 								<div class="minute60">00:00</div>
 							</div>
@@ -688,6 +689,9 @@ $(function() {
     $ripple.css({top: y, left: x});
     elem.append($ripple);
   };
+  $('.open_popup').click(function(){
+	 $('.popup_img').show(); 
+  });
   
   $('.bg-grad').click(function(e) {
 	  console.log("Sdsd");
@@ -710,24 +714,30 @@ $(function() {
         $(that).removeClass("success processing");
       }, submitPhase2);
     }, submitPhase1);
-    
-    
-    
+    $('#home .div5 img').attr("src",'');
+    $('#home .div5 img').attr("src",'../img/chart.gif');
     
   });
   
   $('.category-list li').click(function(){
   	var cate = $("#"+$(this).attr("data-cate")+"");
+  	
+    
+    if($(this).attr("data-cate")=="home"){
+    	  $('#home .div5 img').attr("src",'');
+  	 	$('#home .div5 img').attr("src",'../img/chart.gif');
+    }
   	$('.contents-tab section').hide();
   	 $('.category-list li').removeClass('active');
   	$(cate).css("display","inline-block");
   	$(this).addClass("active");
   });
-  
+
   $('.memo_edit').click(function(){
 	  if($(this).attr('src')=="../img/plus.png"){
 		  $('.memo_input').html("<input type='text' class='memo-value' name='memo' >");
 		  $(this).attr('src','../img/check.png');
+		  $('.memo-value').focus();
 	  }else if($(this).attr('src')=="../img/check.png"){
 		  var memo_value = $('.memo-value').val();
 		  $('.memo_input').html(memo_value +" <span class='checkbox1'><input type='checkbox' id='chk3'/><label for='chk3'></label></span> ")
