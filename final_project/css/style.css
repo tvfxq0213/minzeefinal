@@ -457,7 +457,7 @@ li.off.active{background:rgba(51,58,78,1);  }
 .chart-top .circle.active{font-size:11px; font-style:normal;  line-height:38px;}
 .chart-top .day.active.circle{padding-top:8px; line-height:1;}
 .balloon img{width:40px;}
-.balloon i{position:absolute; top:6px; left:6px;font-size:25px; color:#fff; }
+.balloon i{position:absolute; top:7px; left:6px;font-size:25px; color:#fff; }
 .bar-wrap{width:170px;}
 .bar{background:#05cec3; height:9px; width:0px;}
 .bar-wrap .minute2, .bar-wrap .minute60{left:-23px;color:#fff; font-size:15px; line-height:20px; background:url('../img/balloon6.png'); position:absolute;  background-size:47px 25px; width:47px; height:25px; text-align:center; top: -30px;}
