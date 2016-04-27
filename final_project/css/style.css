@@ -185,13 +185,13 @@ img{width:50%; max-width:402px;}
 	height:100%; width:100%; padding-top:120px; overflow:hidden; color:#808080; display:inline-block; /*display:none;*/}
 
 .popup_img{min-width:100%; width:100%; position:absolute; display:none; top:0; left:0;}
-.login.inactive {
+/*.login.inactive {
   opacity: 0;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
+}*/
 .bg_login{background-image:url('../img/login.png');  background-size:100%; width:595px; height:583px; padding-top:50px; left:10px; top:-35px; display:inline-block;}
-/*
+
 login a.bg-grad:after {
   content: "";
   position: absolute;
@@ -209,6 +209,7 @@ login a.bg-grad:after {
   opacity: 0;
   background:#00b0b4;
 }
+/*
 .login a.bg-grad.processing {
 	border:none;
 
@@ -264,6 +265,7 @@ login a.bg-grad:after {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
+
 .main.active {
 display:inline-block;
   opacity: 1;
@@ -465,3 +467,6 @@ ul.week li .bg-p{display:block; width:100%; background:#ffd7d9;  line-height:1.4
 ul.week li .bg-none{display:block; width:100%;   line-height:1.4; padding-left:10px;font-size:14px;}
 
 ul.week li p{margin:0px 0 10px ; text-align:center;}
+.slider_patient li{width:557px !important; }
+#patient .bx-viewport{height:980px !important;}
+#patient .bx-controls-direction{display:none;}
