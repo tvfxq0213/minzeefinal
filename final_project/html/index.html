@@ -550,14 +550,20 @@
 	                    <h2 class="patient-select">2016/06 <img src="../img/button/select_btn.png"class="select-btn"></h2>
 	                	<p class="text-center"><span class="text-mint">OS</span> Ward</p>
 	                	<div class="select-list month border-top">
+	                	<div class="year relative text-center"><a href="#0" class="absolute" style="top:5px; left:10px;"><i class="icon-arrow-left"></i></a>2016<a href="#0" class="absolute" style="top:5px; right:10px"><i class="icon-arrow-right"></i></a></div>
 	                		<ul>
-	                			<li>2016/01</li>
-	                			<li>2016/02</li>
-	                			<li>2016/03</li>
-	                			<li>2016/04</li>
-	                			<li>2016/05</li>
-	                			<li class="active">2016/06</li>
-	                			<li>2016/07</li>
+	                			<li>1월</li>
+	                			<li>2월</li>
+	                			<li>3월</li>
+	                			<li>4월</li>
+	                			<li>5월</li>
+	                			<li class="active">6월</li>
+	                			<li>7월</li>
+	                			<li>8월</li>
+	                			<li>9월</li>
+	                			<li>10월</li>
+	                			<li>11월</li>
+	                			<li>12월</li>
 	                			
 	                		</ul>
 	                	</div>
@@ -618,16 +624,36 @@
 
 							</ul>
 							<ul class="week clearfix">
-								<li class="opacity"><span class="dd text-mint">29</span></li>
+								<li class="opacity" ><span class="dd text-mint">29</span></li>
 								<li class="opacity"><span class="dd">30</span></li>
 								<li class="opacity"><span class="dd">31</span></li>
-								<li><span class="dd">1</span><p><span class="circle evening">E</span></p><span class="bg-y">세미나</span></li>
-                                                                <li class="relative"><span class="dd">2</span><p><span class="circle day">D</span></p><span class="bg-y">세미나</span><div class="li_today"></div></li>
-								<li><span class="dd">3</span><p><span class="circle evening">E</span></p></li>
-								<li><span class="dd">4</span><p><span class="circle night">N</span></p></li>
+								<li><span class="dd" data-date="1">1</span><p><span class="circle evening">E</span></p><span class="bg-y">세미나</span></li>
+                                <li class="relative" data-date="2"><span class="dd">2</span><p><span class="circle day">D</span></p><span class="bg-y">세미나</span><div class="li_today"></div></li>
+								<li><span class="dd" data-date="3" >3</span><p><span class="circle evening">E</span></p></li>
+								<li><span class="dd" data-date="4">4</span><p><span class="circle night">N</span></p></li>
 							</ul>
-							<ul class="schedule1">
-								<li></li>
+							<ul class="schedule">
+								<li class="none">
+								29
+								</li>
+								<li class="none">
+								30
+								</li>
+								<li class="none">
+								31
+								</li>
+								<li>
+								1
+								</li>
+								<li>
+								2
+								</li>
+								<li>
+								3
+								</li>
+								<li>
+								4
+								</li>
 							</ul>
 							<ul class="week clearfix">
 								<li><span class="dd text-mint">5</span><p><span class="circle night">N</span></p><span class="bg-none">망종</span></li>
@@ -758,7 +784,7 @@
 		</div><!-- main -->
 	</div>
 <script type="text/javascript">
-$(function() {
+$(document).ready(function() {
   
   var animating = false,
       submitPhase1 = 1100,
@@ -782,7 +808,7 @@ $(function() {
   });
   
   $('.bg-grad').click(function(e) {
-	  console.log("Sdsd");
+	 
     if (animating) return;
     animating = true;
     var that = this;
@@ -866,10 +892,10 @@ $(function() {
   $('.title .circle.today').click(function(){
 	  if($(this).hasClass('active')){
 		  $(this).removeClass('active');
-                  $('.li_today').hide();
+                  $('.li_today').removeClass('active');
 	  }else{
 		  $(this).addClass('active');
-                   $('.li_today').show();
+                   $('.li_today').addClass('active');
 	  }
   });
   
@@ -946,8 +972,8 @@ $(function() {
   });
   
   $('.select-btn').click(function(){
-	 if($('.select-list').css('display')=="none"){
-		 $('.select-list').show();
+	 if($(this).parent().siblings('.select-list').css('display')=="none"){
+		 $(this).parent().siblings('.select-list').show();
 	 }else{
 		 $('.select-list').hide();
 	 }

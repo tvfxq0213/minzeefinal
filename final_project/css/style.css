@@ -209,7 +209,7 @@ login a.bg-grad:after {
   opacity: 0;
   background:#00b0b4;
 }
-/*
+/* 로그인 화면 전환 
 .login a.bg-grad.processing {
 	border:none;
 
@@ -353,7 +353,7 @@ div.border-top{border-radius: 10px 10px 0 0;
 div.timegif{background-size:cover; background-repeat: no-repeat; }
 .div1{width:100%; display:inline-block}
 .div1 .title .circle, ul.week .circle{display:inline-block; width:35px; height:35px; font-weight:bold; color:#fff; line-height:35px; text-align:center;}
-.div1 .title .circle.active{line-height:30px; font-size:10px; font-weight:normal}
+.div1 .title .circle.active{line-height:35px; font-size:10px; font-weight:normal}
 .div1 ul{border:2px solid #fff; background:#fff; border-bottom:none; border-radius:5px; ; width:100%;display:inline-block; }
 .div1 ul.week li{float:left; margin-bottom:0px; line-height:1.5; padding:30px 0; height: 135px; color:rgba(51,58,78,0.5); display:inline-block; width:14.28%; text-align:center;}
 
@@ -472,13 +472,15 @@ li.off.active{background:rgba(51,58,78,1);  }
 /*section 4 */
 .month.select-list.border-top{display:none; border-radius:10px 0 0 10px; top:38px; right:232px;width:240px; background:#333a4e; position:absolute; z-index:5;}
 .month.select-list:after{ background: url(../img/triangle_navy.png); content:""; width:9px; height:7px; position:absolute; top:-7px; right:10px; }
-.month.select-list ul{margin-top:20px; height:50px; margin-left:0;}
-.month.select-list ul li{padding:5px; float:left; width:16.66%; background:#fff; border-bottom:1px solid #f5f5f5;}
+.month.select-list .year{color:white !important;  line-height:30px; width:100%; height:30px}
+.month.select-list .year i{color:white; font-size:15px; vertical-align:3px;}
+.month.select-list ul{margin-top:0px; padding:10px;  height:90px; margin-left:0; background:#fff;}
+.month.select-list ul li{padding:8px 0px; font-size:11px; float:left; text-align:center; width:14.66%; margin:1%; border-radius:50%;  border-bottom:none;}
 .month.select-list ul li:hover , .select-list ul li:focus,.select-list ul li.active{background:#ff7610; color:#fff;}
 
 
 .today{background:#ff7610; color:#fff; border:1px solid #ff7610; font-size:12px;}
-.div1 .title .circle.active.today{background:rgba(255,118,16,.5); font-size:12px;}
+.div1 .title .circle.active.today{background:rgba(255,118,16,.5); font-size:12px; line-height:35px;}
 .border-top ul.title{padding:0; margin:0;}
 ul.title li{float:left; width:14.28%; padding:20px; text-align:center;}
 ul.week{display:inline-block; width:100%;background:#fff; margin-bottom:-2px;}
@@ -489,7 +491,8 @@ ul.week li .bg-y{display:block; width:100%; background:#fdf690;  line-height:1.4
 ul.week li .bg-g{display:block; width:100%; background:#7fd77f;  line-height:1.4; padding-left:10px;font-size:14px;}
 ul.week li .bg-p{display:block; width:100%; background:#ffd7d9;  line-height:1.4; padding-left:10px;font-size:14px;}
 ul.week li .bg-none{display:block; width:100%;   line-height:1.4; padding-left:10px;font-size:14px;}
-.li_today{width:100%; height:100%; border:1px solid #ff7610; top:0; left:0; background:transparent; position:absolute; display:none; }
+.li_today{width:100%; height:100%; border:1px solid #ff7610; top:0; left:0; background:transparent; position:absolute;  }
+.li_today.active{background:rgba(255,118,16,0.5);}
 ul.week li p{margin:0px 0 10px ; text-align:center;}
 .slider_patient li{width:577px !important; }
 #patient .bx-viewport{height:1000px !important;}

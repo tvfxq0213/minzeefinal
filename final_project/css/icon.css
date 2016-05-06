@@ -122,3 +122,11 @@
 .icon-pill5:before {
     content: "\e91f";
 }
+
+.icon-arrow-left:before {
+    content: "\e805";
+}
+
+.icon-arrow-right:before {
+    content: "\e806";
+}
