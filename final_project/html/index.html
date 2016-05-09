@@ -414,15 +414,12 @@
 	                		<img src="../img/bone.png" class="pull-left"/>
 	                		<div class="pull-left">
 	                			<p>LBP c Lt. buttock pain.</p>
-	                			<p>agg 4일전 LBP 지속</p>
-	                			
+	                			<p>agg 4일전 LBP 지속</p>              			
 	                			<p class="mgt10">
 	                			2016년 01월 01일<br/>
 	                			L-spine simple x-ray<br/>
-	                			L4-5 disc space narrowing disc instability+
-	                			
-	                			</p>
-	                		
+	                			L4-5 disc space narrowing disc instability+                			
+	                			</p>   		
 	                		</div> 
 	                	</div>
 	                	</div>
@@ -431,13 +428,8 @@
 	                		<div class="cols3-1"></div>
 	                		<div class="cols3-1"></div>
 	                		<div class="cols3-1"></div>
-	                	</div>
-	                	
-	                	
-	                </div>
-                	
-                	
-                	
+	                	</div>	          	
+	                </div>   	
                 </section>
                 <section id="hospital_room">
                		<div class="patient-head">
@@ -582,35 +574,35 @@
                             <ul class="nurse">
                              <li>
                                     <img src="../img/ex3.png" class="circle profile-img"/>
-                                    김용선<br/>
-                                    병동401
+						                                    김용선<br/>
+						                                    병동401
                              </li>
-                              <li>
+                             <li>
                                     <img src="../img/ex10.png" class="circle profile-img"/>
-                                    김태연<br/>
-                                    병동402
+						                                    김태연<br/>
+						                                    병동402
                              </li>
-                              <li>
+                             <li>
                                     <img src="../img/ex12.png" class="circle profile-img"/>
-                                    정휘인<br/>
-                                    병동403
+						                                    정휘인<br/>
+						                                    병동403
                              </li>
-                              <li>
+                             <li>
                                     <img src="../img/ex6.png" class="circle profile-img"/>
-                                    문병리<br/>
-                                    병동404
+						                                    문병리<br/>
+						                                    병동404
                              </li>
-                              <li>
+                             <li>
                                     <img src="../img/ex8.png" class="circle profile-img"/>
-                                     김태형<br/>
-                                    병동405
-                             </li>
-                              <li>
+						                                     김태형<br/>
+						                                    병동405
+	                         </li>
+                             <li>
                                     <img src="../img/ex1.png" class="circle profile-img"/>
-                                    김민용<br/>
-                                    병동406
+						                                    김민용<br/>
+						                                    병동406
                              </li>
-                            </ul>
+                           </ul>
 			</div>
 						<div class="border-top" style="margin-top:20px;">
 							<ul class="title relative">
@@ -623,7 +615,7 @@
 								<li>토</li>
 
 							</ul>
-							<ul class="week clearfix">
+							<ul class="week clearfix" data-nth="1">
 								<li class="opacity" data-date="5-29"><span class="dd text-mint">29</span></li>
 								<li class="opacity" data-date="5-30"><span class="dd">30</span></li>
 								<li class="opacity" data-date="5-30"><span class="dd">31</span></li>
@@ -687,7 +679,7 @@
 								</div>
 								</li>
 							</ul>
-							<ul class="week clearfix">
+							<ul class="week clearfix" data-nth="2">
 								<li data-date="6-5"><span class="dd text-mint">5</span><p><span class="circle night">N</span></p><span class="bg-none">망종</span></li>
 								<li  data-date="6-6"><span class="dd text-mint">6</span><p><span class="circle evening">E</span></p><span class="bg-none text-mint">현충일</span><span class="bg-g">정기교육</span></li>
 								<li data-date="6-7"><span class="dd">7</span><p><span class="circle off">FF</span></p></li>
@@ -776,7 +768,7 @@
                                     <img src="../img/plus.png" class="absolute"  style=" width:33px; right:20px; bottom:20px">
 								</div>
 								</li>
-							</ul><ul class="week clearfix">
+							</ul><ul class="week clearfix" data-nth="3">
 								<li  data-date="6-12"><span class="dd text-mint">12</span><p><span class="circle day">D</span></p></li>
 								<li data-date="6-13" ><span class="dd">13</span><p><span class="circle day">D</span></p><span class="bg-g">정기교육</span></li>
 								<li data-date="6-14"><span class="dd">14</span><p><span class="circle day">D</span></p></li>
@@ -847,7 +839,7 @@
 								</div>
 								</li>
 							</ul>
-							<ul class="week clearfix">
+							<ul class="week clearfix" data-nth="4">
 								<li data-date="6-19"><span class="dd text-mint">19</span><p><span class="circle day">D</span></p></li>
 								<li data-date="6-20"><span class="dd">20</span><p><span class="circle off">FF</span></p></li>
 								<li data-date="6-21"><span class="dd">21</span><p><span class="circle day">D</span></p><span class="bg-p">신입교육</span></li>
@@ -908,7 +900,7 @@
 								</div>
 								</li>
 							</ul>
-							<ul class="week clearfix">
+							<ul class="week clearfix" data-nth="5">
 								<li data-date="6-26"><span class="dd text-mint">26</span><p><span class="circle night">N</span></p></li>
 								<li data-date="6-27"><span class="dd">27</span><p><span class="circle evening">E</span></p><span class="bg-g">정기교육</span></li>
 								<li data-date="6-28"><span class="dd">28</span><p><span class="circle off">FF</span></p></li>
@@ -1263,6 +1255,18 @@ $(document).ready(function() {
   
   $('ul.week li').click(function(){
 	 var content = $(this).attr('data-date');
+	 var nth = $(this).parent().attr('data-nth');
+	
+	 if(nth <=2){
+		 $('ul.week').show();
+		 $('ul.week[data-nth=4], ul.week[data-nth=5]').hide();
+	 }else if(nth==3){
+		 $('ul.week').show();
+		 $('ul.week[data-nth=1], ul.week[data-nth=5]').hide();
+	 }else if(nth>3){
+		 $('ul.week').show();
+		 $('ul.week[data-nth=1], ul.week[data-nth=2]').hide();
+	 }
 	 
 	 $('ul.schedule li').removeClass('active').removeAttr('style');
 	 $('ul.schedule li[data-date='+content+']').addClass('active').slideDown();
