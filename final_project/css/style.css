@@ -352,8 +352,8 @@ div.border-top{border-radius: 10px 10px 0 0;
 .border-top .content p{margin:0;}
 div.timegif{background-size:cover; background-repeat: no-repeat; }
 .div1{width:100%; display:inline-block}
-.div1 .title .circle, ul.week .circle{display:inline-block; width:35px; height:35px; font-weight:bold; color:#fff; line-height:35px; text-align:center;}
-.div1 .title .circle.active{line-height:35px; font-size:10px; font-weight:normal}
+.div1 .title .circle, ul.week .circle{display:inline-block; width:35px; height:35px; font-weight:bold; color:#fff; line-height:33px; text-align:center;}
+.div1 .title .circle.active{line-height:32px; font-size:10px; font-weight:normal}
 .div1 ul{border:2px solid #fff; background:#fff; border-bottom:none; border-radius:5px; ; width:100%;display:inline-block; }
 .div1 ul.week li{float:left; margin-bottom:0px; line-height:1.5; padding:30px 0; height: 135px; color:rgba(51,58,78,0.5); display:inline-block; width:14.28%; text-align:center;}
 
@@ -454,8 +454,8 @@ li.off.active{background:rgba(51,58,78,1);  }
 /*section3*/
 .border-top.bg-white{margin-top:20px; background:#fff;}
 .orange_noti{background:#ff7610; color:white; font-size:11px; border:2px solid #fff; top:2px; left:2px; display:inline-block; width:30px; height:30px; text-align:center; line-height:28px}
-.chart-top .circle.active{font-size:11px; font-style:normal;  line-height:38px;}
-.chart-top .day.active.circle{padding-top:8px; line-height:1;}
+.chart-top .circle.active{font-size:11px; font-style:normal;  line-height:32px;}
+.chart-top .day.active.circle{padding-top:5px; line-height:1;}
 .balloon img{width:40px;}
 .balloon i{position:absolute; top:7px; left:6px;font-size:25px; color:#fff; }
 .bar-wrap{width:170px;}
@@ -520,3 +520,5 @@ ul.week li p{margin:0px 0 10px ; text-align:center;}
 .slider_patient li{width:577px !important; }
 #patient .bx-viewport{height:1000px !important;}
 #patient .bx-controls-direction{display:none;}
+
+div.footer{background:#000; position:absolute; bottom:0; height:44px; border:none; width:100%; }
