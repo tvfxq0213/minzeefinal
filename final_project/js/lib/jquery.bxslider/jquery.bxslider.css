@@ -31,6 +31,7 @@
 
 .bx-wrapper .bx-viewport {
 	
+	background: #fff;
 	
 	/*fix other elements on the page moving (on Chrome)*/
 	-webkit-transform: translatez(0);
@@ -108,7 +109,13 @@
 	background: url(images/controls.png) no-repeat -43px -32px;
 }
 
+.bx-wrapper .bx-prev:hover {
+	background-position: 0 0;
+}
 
+.bx-wrapper .bx-next:hover {
+	background-position: -43px 0;
+}
 
 .bx-wrapper .bx-controls-direction a {
 	position: absolute;

@@ -12,7 +12,7 @@
  <link rel="stylesheet" type="text/css" href="../css/style.css">
 <!-- jQuery -->
 <script src="../js/lib/jquery.js"></script>
-<script src="../js/lib/jquery.bxslider/jquery.bxslider.min.js"></script>
+<script src="../js/lib/jquery.bxslider/jquery.bxslider.js"></script>
 </head>
 
 
@@ -40,7 +40,7 @@
 				</form>
 				
 				<div class="">
-					<a href="#0">아이디/비밀번호 찾기</a>
+					<a href="#0" class="open_popup">아이디/비밀번호 찾기</a>
                                         <span class="mgl15 mgr15">|</span>
 					<a href="#0">회원가입</a>
 				</div>
@@ -171,139 +171,118 @@
 						</div>
 					</div>
 					<div class="clearfix "></div>
-					
-					<div class="middle  pull-left">
-						<div class="div4  relative border-top">
-							<h2 class="title">오늘입원환자</h2>
-							<div class="content relative">
-							
-							<ul class="bxslider">
-								<li >
-								<img src="../img/ex11.jpg"  class="profile-img  circle pull-left"/>
-								<div class="pull-left info mgt15">
-									<p class="name">안재현</p>
-									<p>32세 / <i class="icon-man"></i></p>
-									<p>RA, OS 병동406</p> 
-								</div>
-	
-								</li>
-								<li >
-								<img src="../img/ex15.png"  class="profile-img  circle pull-left"/>
-								<div class="pull-left info mgt15">
-									<p class="name">최유정</p>
-									<p>18세 / <i class="icon-woman"></i></p>
-									<p>HIVD, OS 병동407</p> 
-								</div>
-								
-								</li>
-								<li >
-								<img src="../img/ex16.png"  class="profile-img  circle pull-left"/>
-								<div class="pull-left info mgt15">
-									<p class="name">이승기</p>
-									<p>30세 / <i class="icon-man"></i></p>
-									<p>Fx, OS 병동401</p> 
-								</div>
-								
-								</li>
-							</ul>
-							</div>
-						</div>
-						<div class="div4  relative border-top">
-						 	<h2 class="title">오늘환자</h2>
-						 	<div class="content relative">
-						 	
-							<ul class="bxslider2">
-								<li>
-								<img src="../img/ex4.jpg"  class="pull-left  circle profile-img"/>
-								<div class="pull-left info mgt15">
-									<p class="name">송중기</p>
-									<p>32세 / <i class="icon-man"></i></p>
-									<p>RA, OS 병동406</p> 
-								</div>
-	
-								</li>
-								<li >
-								<img src="../img/ex13.png"  class="profile-img  circle pull-left"/>
-								<div class="pull-left info mgt15">
-									<p class="name">김다솜</p>
-									<p>24세 / <i class="icon-woman"></i></p>
-									<p>Fx, OS 병동403</p> 
-								</div>
-								
-								</li>
-								<li >
-								<img src="../img/ex14.png"  class="profile-img  circle pull-left"/>
-								<div class="pull-left info mgt15">
-									<p class="name">김민석</p>
-									<p>25세 / <i class="icon-man"></i></p>
-									<p>AVN, OS 병동403</p> 
-								</div>
-								
-								</li>
-							</ul>
-			
-							</div>
-							
-						</div>
-					</div>
-					<div class="pull-right relative border-top div5">
-						<h2 class="title">유행질병</h2>
-						<div class="content text-center">
-						<p style="margin-top:15px;">자카바이러스
-						<span style="font-weight:bold">(Zica Virus)</span></p>
-						<img src="../img/chart.gif" class="chart_gif" style="width:160px;" />
-						
-						<p>
-						<span class="pull-left" style="margin-left:50px">
-						사망자<br/>
-						<span class="cnt death">01</span>
-						</span>
-						<img src="../img/slash.png" style="width:21px; margin-top:6px;margin-right:5px;" class="pull-left"/>
-					
-						<span class="pull-left">
-						보균자<br/>
-						<span class="cnt">06</span>
-						</span>
-						</p>
-						<div class="clearfix mgb15"></div>
-						</div>
-						
-					</div>
-					<div class="div1 relative border-top2 relative">
-						<h2 class="title">현재 근무하는 간호사</h2>
-						<ul class="nurse">
-						 <li>
-						 	<img src="../img/ex3.png" class="circle profile-img"/>
-						 	김용선<br/>
-						 	병동401
-						 </li>
-						  <li>
-						 	<img src="../img/ex10.png" class="circle profile-img"/>
-						 	김태연<br/>
-						 	병동402
-						 </li>
-						  <li>
-						 	<img src="../img/ex12.png" class="circle profile-img"/>
-						 	정휘인<br/>
-						 	병동403
-						 </li>
-						  <li>
-						 	<img src="../img/ex6.png" class="circle profile-img"/>
-						 	문병리<br/>
-						 	병동404
-						 </li>
-						  <li>
-						 	<img src="../img/ex8.png" class="circle profile-img"/>
-							 김태형<br/>
-						 	병동405
-						 </li>
-						  <li>
-						 	<img src="../img/ex1.png" class="circle profile-img"/>
-						 	김민용<br/>
-						 	병동406
-						 </li>
+					<div class="border-top relative mgt20">
+						<h2 class="title">주의요망환자</h2>
+						<div class="content relative">
+						<ul class="bxslider3">
+							<li>
+							 	<img src="../img/ex7.jpg" class="pull-left circle chart-profile"/>
+							 	<div class="pull-left mgt20">
+							 		<p><span class="name">장민지</span> 23세 / <i class="icon-woman sm text-mint "></i> LBP, OS 병동403</p>
+							 		<ul class="patient_info">
+							 			<li>RESP.<br/><span class="text bold lg">16</span><br/><span class="text-orange text bold sm">▼</span> 1</li>
+							 			<li>PLUSE<br/><span class="text bold lg">70</span><br/><span class="text-orange text bold sm">▲</span> 1</li>
+							 			<li>TEMP.<br/><span class="text bold lg" >36.5</span><br/><span class="text-orange text bold sm">-</span></li>
+							 			<li>B.P<br/><span class="text bold lg">120 / 60</span><br/><span class="text-orange text bold sm">-</span></li>
+							 		</ul>
+							 	</div>
+							 	<div class="clearfix " >
+							 	<p class="mgt10">환자일정</p>
+							 		<img src="../img/patient02.png" class="img-center mgt10" style="width:90%;">
+							 	</div>
+							</li>
+							<li>
+								<img src="../img/ex9.jpg" class="pull-left circle chart-profile"/>
+							 	<div class="pull-left mgt20">
+							 		<p><span class="name">하연수</span> 26세 / <i class="icon-woman sm text-mint "></i> LBP, OS 병동403</p>
+							 		<ul class="patient_info">
+							 			<li>RESP.<br/><span class="text bold lg">14</span><br/><span class="text-orange text bold sm">▼</span> 2</li>
+							 			<li>PLUSE<br/><span class="text bold lg">74</span><br/><span class="text-orange text bold sm">▲</span> 5</li>
+							 			<li>TEMP.<br/><span class="text bold lg">36.5</span><br/><span class="text-orange text bold sm">-</span></li>
+							 			<li>B.P<br/><span class="text bold lg">120 / 60</span><br/><span class="text-orange text bold sm">-</span></li>
+							 		</ul>
+							 	</div>
+							 	<div class="clearfix " >
+							 	<p class="mgt10">환자일정</p>
+							 		<img src="../img/patient02.png" class="img-center mgt10" style=" width:90%;">
+							 	</div>
+							</li>
 						</ul>
+						</div>
 					</div>
+						
+					<div class="div4 pull-left relative border-top">
+						<h2 class="title">오늘입원환자</h2>
+						<div class="content relative">
+						
+						<ul class="bxslider">
+							<li >
+							<img src="../img/ex11.jpg"  class="profile-img  circle pull-left"/>
+							<div class="pull-left info mgt15">
+								<p class="name">안재현</p>
+								<p>32세 / <i class="icon-man"></i></p>
+								<p>RA, OS 병동406</p> 
+							</div>
+
+							</li>
+							<li >
+							<img src="../img/ex15.png"  class="profile-img  circle pull-left"/>
+							<div class="pull-left info mgt15">
+								<p class="name">최유정</p>
+								<p>18세 / <i class="icon-woman"></i></p>
+								<p>HIVD, OS 병동407</p> 
+							</div>
+							
+							</li>
+							<li >
+							<img src="../img/ex16.png"  class="profile-img  circle pull-left"/>
+							<div class="pull-left info mgt15">
+								<p class="name">이승기</p>
+								<p>30세 / <i class="icon-man"></i></p>
+								<p>Fx, OS 병동401</p> 
+							</div>
+							
+							</li>
+						</ul>
+						</div>
+					</div>
+					<div class="div4  pull-left relative border-top">
+					 	<h2 class="title">퇴원예정환자</h2>
+					 	<div class="content relative">
+					 	
+						<ul class="bxslider2">
+							<li>
+							<img src="../img/ex4.jpg"  class="pull-left  circle profile-img"/>
+							<div class="pull-left info mgt15">
+								<p class="name">송중기</p>
+								<p>32세 / <i class="icon-man"></i></p>
+								<p>RA, OS 병동406</p> 
+							</div>
+
+							</li>
+							<li >
+							<img src="../img/ex13.png"  class="profile-img  circle pull-left"/>
+							<div class="pull-left info mgt15">
+								<p class="name">김다솜</p>
+								<p>24세 / <i class="icon-woman"></i></p>
+								<p>Fx, OS 병동403</p> 
+							</div>
+							
+							</li>
+							<li >
+							<img src="../img/ex14.png"  class="profile-img  circle pull-left"/>
+							<div class="pull-left info mgt15">
+								<p class="name">김민석</p>
+								<p>25세 / <i class="icon-man"></i></p>
+								<p>AVN, OS 병동403</p> 
+							</div>
+							
+							</li>
+						</ul>
+		
+						</div>	
+					</div>
+				
                 </section>
                 <section id="patient">
                 	<div class="patient-head">
@@ -313,12 +292,12 @@
                 	
                 	<div class="patient-chart relative">
 	                	<div class="absolute chart-top">
-	                	<span class="pull-left">No. 12345678</span>
-	                	<span class="pull-right">
-	                	<i class="icon-heart circle day"></i>
-	                	<i class="icon-patient circle evening"></i>
-	                	<i class="icon-food circle night"></i>
-	                	</span>
+	            	
+	                	 
+		                	<i class="icon-heart circle day absolute" style="right:90px; top:-25px;"></i>
+		                	<i class="icon-patient circle evening absolute line1" style="right:45px; top:-25px;"></i>
+		                	<i class="icon-food circle night line1 absolute" style="right:0px; top:-25px;"></i>     
+	                	
 	                
 	                	</div>
                         <ul class="slider_patient">
@@ -328,7 +307,7 @@
 	                	
 	                	<img src="../img/ex7.jpg" class="circle chart-profile pull-left"/>
 	                	<div class="pull-right mgt15">
-		                	<p class="text-sm text-right">16/06/02 12:00</p>
+		                	<p class=" text-right" style="font-size:13px;">No. 12345678</p>
 		                	<ul class="info">
 		                		<li><i class="icon-profile"></i> 940422 - 2000000</li>
 		                		<li><i class="icon-home"></i> 서울시 강남구 청담동 97-7 405호</li>
@@ -1030,7 +1009,6 @@
                                  </li>
                            </ul>
 			</div>
-                    <img src="../img/image3.png" style="width:100%; margin-top:20px; max-width:100%;"/>
                     </div>
                 </section>
                 <!--  
@@ -1404,6 +1382,24 @@ $(document).ready(function() {
 		  $(this).html('절대<br/>안정');
 	  }
   });
+  $('.chart-top .icon-patient').click(function(){
+	  if($(this).hasClass('active')){
+		  $(this).removeClass('active').addClass('icon-patient');
+		  $(this).html('');
+	  }else{
+		  $(this).addClass('active').removeClass('icon-patient');
+		  $(this).html('낙상<br/>주의');
+	  }
+  });
+  $('.chart-top .icon-food').click(function(){
+	  if($(this).hasClass('active')){
+		  $(this).removeClass('active').addClass('icon-food');
+		  $(this).html('');
+	  }else{
+		  $(this).addClass('active').removeClass('icon-food');
+		  $(this).html('식단<br/>관리');
+	  }
+  });
   $('.chart-top .icon-pill2').click(function(){
 	  if($(this).hasClass('active')){
 		  $(this).html('').removeClass('active').addClass('icon-pill2');
@@ -1441,6 +1437,13 @@ $(document).ready(function() {
 	  auto: true,
 	  pager:false
   });
+  $('.bxslider3').bxSlider({
+	   maxSlides:1,
+       slideWidth: 578,
+	  auto: true,
+	  pager:false
+  });
+  
    $('.slider_patient').bxSlider({
        maxSlides:1,
        slideWidth: 577,

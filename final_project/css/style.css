@@ -90,6 +90,8 @@ li{margin:0; padding:0; list-style:none;}
 .mgl15{margin-left: 15px}
 .mgr15{margin-right:15px}
 .mgt15{margin-top: 18px;}
+.mgt10{margin-top:10px !important;}
+.mgt20{margin-top:20px;}
 .mgb15{margin-bottom: 15px;}
 .mg0{margin:0 !important;}
 img{width:50%; max-width:402px;}
@@ -276,10 +278,10 @@ display:inline-block;
 /*side category*/
 .category-tab{width:19%; color:#fff; height:100%}
 .category-tab .name{font-weight:900; font-size:20px; margin: 0 0 10px 0;}
-.category-tab .email{width:130px; background:#3d435b; border-radius:5px; color:#8ea6b8; font-size:12px; padding:5px; }
+.category-tab .email{width:130px; background:#3d435b; border-radius:5px; color:#8ea6b8; font-size:11px; padding:4px; }
 .profile-img{width:108px; height:108px; border: 10px solid rgba(34,36,54,0.7);}
 .border-top .profile-img{border:10px solid #fff;}
-.logo{width:128px; margin-top:45px;}
+.logo{width:120px; margin-top:40px;}
 .category-list {margin-top:30px;}
 .category-list li{position:relative;  width:calc(100% - 20px); padding:15px 30px 15px 20px; margin-left:20px;}
 .category-list li:after{content:""; background:url("../img/li_after.png"); background-size:111px 6px; height:6px; position:absolute; top:100px; width:111px; right:15px;  }
@@ -395,14 +397,21 @@ li.off.active{background:rgba(51,58,78,1);  }
 .div2 li:last-child, .div3 li:last-child{border-bottom:none;}
 .div2{width:343px; display:inline-block}
 .div3{width:215px; display:inline-block}
-.div4{width:343px; display:inline-block; margin-bottom:20px;}
+.div4{width:279px; display:inline-block; margin-top:20px; margin-bottom:20px;}
+.div4:last-child{margin-left:20px;}
 .div5{width:215px; display:inline-block;margin-top:20px; margin-bottom:20px;}
 .div4 .content{margin-bottom:-1px;}
 .div4 .profile-img{width:60px; height:60px; margin:20px 15px 20px 40px;; border:none;}
 .div4 .info p, .div4 .info i{font-size:16px;}
 .div4 .info i{color:#00b0b4;}
-.div4 .info .name{font-weight:700; color:#222436;  font-size:18px;}
+.div4 .info .name, .bxslider3 .name{font-weight:700; color:#222436;  font-size:18px;}
 .prev,.next{position:absolute; background:#00b0b4; border:1px solid #fff; border-radius:5px; color:#fff; width:24px; height:25px; text-align:center; text-decoration:none; font-size: 20px;line-height: 25px;}
+.patient_info{margin-top:10px;}
+.patient_info li{float:left; font-size:12px; line-height:1.5;  background:#f7f8f9; text-align:center;border:1px solid #c8cad1; padding: 5px 20px; margin-left:-1px;}
+.bxslider3 .chart-profile{width:115px; height:115px; margin-left:30px; border:2px solid #0db4b8;}
+.bxslider3 .clearfix {border-top:1px solid #c8cad1;}
+.bxslider3 .clearfix p{margin-left:30px;}
+.text-orange{color:#ff5a00;}
 
 .cnt{color:#00b0b4;  font-size:33px;}
 .cnt.death{color:#05cabf;}
@@ -412,6 +421,20 @@ li.off.active{background:rgba(51,58,78,1);  }
 .clock .time2{font-size:40px;}
 .clock .date2{font-weight:bold;}
 .bxslider, .bxslider2{ height:100px;}
+#home .border-top.mgt20 .bx-viewport{height:265px !important}
+.bxslider3{height:265px;}
+#home .border-top.mgt20 .bx-wrapper .bx-loading {display:none; background:none;}
+#home .border-top.mgt20 .bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 30%;
+    margin-top: -13px;
+    outline: 0;
+    width: 25px;
+    height: 25px;
+    text-indent: -9999px;
+    z-index: 9999;
+}
+.bxslider3 > li{display:block; width:578px !important;}
 .bxslider li,.bxslider2 li{display:block; width:343px !important; }
 .bx-viewport{height:94px !important;}
 .bx-wrapper .bx-controls-direction a {
@@ -424,6 +447,7 @@ li.off.active{background:rgba(51,58,78,1);  }
     text-indent: -9999px;
     z-index: 9999;
 }
+
 .bx-wrapper .bx-next {
     right: -10px;
     background: url(../img/button/right.png) no-repeat ; background-size: 25px 25px}
@@ -455,7 +479,8 @@ li.off.active{background:rgba(51,58,78,1);  }
 .border-top.bg-white{margin-top:20px; background:#fff;}
 .orange_noti{background:#ff7610; color:white; font-size:11px; border:2px solid #fff; top:2px; left:2px; display:inline-block; width:30px; height:30px; text-align:center; line-height:28px}
 .chart-top .circle.active{font-size:11px; font-style:normal;  line-height:32px;}
-.chart-top .day.active.circle{padding-top:5px; line-height:1;}
+.chart-top .day.active.circle,
+.chart-top .line1.active.circle{padding-top:5px; line-height:1;}
 .balloon img{width:40px;}
 .balloon i{position:absolute; top:7px; left:6px;font-size:25px; color:#fff; }
 .bar-wrap{width:170px;}
