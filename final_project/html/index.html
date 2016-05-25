@@ -288,6 +288,17 @@
                 	<div class="patient-head">
                     <h2 class="patient-select">장민지 (Jang Min zee) <img src="../img/button/select_btn.png" class="select-btn"></h2>
                 	<p class="text-center">1994.04.22 <i class="icon-woman text-mint"></i> 23세</p>
+                            <div class="select-list border-top" style="right:160px; background:url('../img/selectbg.png');">
+                                    <ul>
+                                            <li>김로마 (Kim Ro ma)</li>
+                                            <li>김재중 (Kim Jae jung) </li>
+                                            <li>송중기 (Song Jung gi)</li>
+                                            <li>안재현 (An Jae hyeon)</li>
+                                            <li class="active">장민지(Jang Min zee)</li>
+                                            <li>차학연 (Cha Hag yeon)</li>
+                                            <li>최승현 (Choe seung hyeon)</li>
+                                    </ul>
+                            </div>
                 	</div>
                 	
                 	<div class="patient-chart relative">
@@ -302,12 +313,12 @@
 	                	</div>
                         <ul class="slider_patient">
                                
-                        <li class="slider_patient_l1">    
+                        <li class="slider_patient_li">    
 	                	<div class="border-top" >
 	                	
 	                	<img src="../img/ex7.jpg" class="circle chart-profile pull-left"/>
 	                	<div class="pull-right mgt15">
-		                	<p class=" text-right mg0" style="font-size:13px;">No. 12345678</p>
+		                	<p class=" text-right mg0 mgr15" style="font-size:13px;">No. 12345678</p>
 		                	<ul class="info">
 		                		<li><i class="icon-profile"></i> 940422 - 2000000</li>
 		                		<li><i class="icon-home"></i> 서울시 강남구 청담동 97-7 405호</li>
@@ -330,7 +341,7 @@
 		                		<p>담당의사</p>
 		                		<img src="../img/ex1.png" class="pull-left chart-img-sm"/>
 		                		<ul class="pull-left ">
-		                			<li><i class="icon-profile"></i>김은전 (26)</li>
+		                			<li><i class="icon-profile"></i>김은정 (26)</li>
 		                			<li><i class="icon-call"></i> 010 - 1234 - 6454 </li>
 		                		</ul>
 		                	</div>
@@ -340,13 +351,13 @@
 		                		 <div class="pull-left mgr15">
 		                		 <span class="text-gray sm">OS</span><br/>
 		                		 <span class="text bold lg">S</span><br/>
-		                		 <span class="text-mgray">Dr 김은정</span>
+		                		 <span class="text-mgray text sm">Dr 김은정</span>
 		                		 </div>
 		                		 <div class="pull-left">
 		                		 	<p>LBP c Lt. buttock pain.<br/>
 		                		 	agg 4일전 LBP 지속
 		                		 	</p>
-		                		 	<p class="mgt20">
+		                		 	<p class="mgt10">
 		                		 	L-spine simple x-ray<br/>
 		                		 	L4-5 disc space narrowing disc space instability+
 		                		 	</p>
@@ -356,36 +367,30 @@
 		                			 <div class="pull-left mgr15">
 		                		 <span class="text-gray sm">OS</span><br/>
 		                		 <span class="text bold lg">P</span><br/>
-		                		 <span class="text-mgray">Dr 김은정</span>
+		                		 <span class="text-mgray text sm">Dr 김은정</span>
 		                		 </div>
 		                		 <div class="pull-left">
-		                		 	<p>LBP c Lt. buttock pain.<br/>
-		                		 	agg 4일전 LBP 지속
-		                		 	</p>
-		                		 	<p class="mgt20">
-		                		 	L-spine simple x-ray<br/>
-		                		 	L4-5 disc space narrowing disc space instability+
-		                		 	</p>
+                                                     <p>L-CT<br/>
+                                                     L4-5 ruptured HNP and inferior migration
+                                                     </p>
+		                		 	
 		                		 </div>
 		                		</li>
 		                		<li>
 		                		<div class="pull-left mgr15">
 		                		 <span class="text-gray sm">OS</span><br/>
 		                		 <span class="text bold lg">O</span><br/>
-		                		 <span class="text-mgray">Dr 김은정</span>
+		                		 <span class="text-mgray text sm">Dr 김소희</span>
 		                		 </div>
 		                		 <div class="pull-left">
-		                		 	<p>LBP c Lt. buttock pain.<br/>
-		                		 	agg 4일전 LBP 지속
+		                		 	<p>OP<br/>
+		                		 	rec DIAM
 		                		 	</p>
-		                		 	<p class="mgt20">
-		                		 	L-spine simple x-ray<br/>
-		                		 	L4-5 disc space narrowing disc space instability+
-		                		 	</p>
+		           
 		                		 </div>
 		                		</li>
 		                	</ul>
-		                	<img  class="pull-right" src="../img/patient01.png" style="width:70px; margin-left:25px; margin-right:25px;"/>
+		                	<img  class="pull-right" src="../img/patient01.png" style="width:70px;  margin-right:25px;"/>
 		                	<div class="clearfix">
 		  						<ul class="patient_info bgfff text-left">
 		  						 	<li>키<br/><span class="text bold lg">165</span>cm</li>
@@ -394,56 +399,355 @@
 		  						 	<li>ASA/PLX(+/-)<br/><span class="text bold lg">5</span>t <i class="icon-pill text-mint"></i><i class="icon-pill text-mint"></i><i class="icon-pill text-mint"></i><i class="icon-pill text-mint"></i><i class="icon-pill text-mint"></i></li>
 		  						</ul>              	
 		                	</div>
-		                	<div class="clearfix " >
-							 	<p class="mgt10">환자일정</p>
-							 	<img src="../img/patient02.png" class="img-center mgt10" style=" width:90%;">
+		                	<div class="clearfix " style="padding:10px 15px;">
+							 	<p >환자일정</p>
+							 	<img src="../img/patient02.png" class="img-center mgt10 " style=" width:90%;">
 							 </div>
-		                </div>
-	                	
-	                	
+		                </div>	
 	                	</div>
+	                	                	
+                                <ul class="patient_info mgt20 width100">
+                                    <li>RESP.<br/><span class="text bold lg">14</span><br/><span class="text-orange text bold sm">▼</span> 2</li>
+                                    <li>PLUSE<br/><span class="text bold lg">74</span><br/><span class="text-orange text bold sm">▲</span> 5</li>
+                                    <li>TEMP.<br/><span class="text bold lg">36.5</span><br/><span class="text-orange text bold sm">-</span></li>
+                                    <li>B.P<br/><span class="text bold lg">120 / 60</span><br/><span class="text-orange text bold sm">-</span></li>
+                                </ul>	                	
+	                </li>
 	                	
-	                	<div class="content">
-	                		<ul class="patient_info width100">
-					 			<li>RESP.<br/><span class="text bold lg">14</span><br/><span class="text-orange text bold sm">▼</span> 2</li>
-					 			<li>PLUSE<br/><span class="text bold lg">74</span><br/><span class="text-orange text bold sm">▲</span> 5</li>
-					 			<li>TEMP.<br/><span class="text bold lg">36.5</span><br/><span class="text-orange text bold sm">-</span></li>
-					 			<li>B.P<br/><span class="text bold lg">120 / 60</span><br/><span class="text-orange text bold sm">-</span></li>
-							 </ul>
-	                	</div>
-	                	
-	                	<div class="border-top " style="display:none;">
-	                	<ul class="tab">
-	                		<li class="active"></li>
-	                		<li></li>
-	                		<li></li>
-	                	</ul>
-	                	<div class="clearfix">
-	                		<img src="../img/bone.png" class="pull-left"/>
-	                		<div class="pull-left">
-	                			<p>LBP c Lt. buttock pain.</p>
-	                			<p>agg 4일전 LBP 지속</p>              			
-	                			<p class="mgt10">
-	                			2016년 01월 01일<br/>
-	                			L-spine simple x-ray<br/>
-	                			L4-5 disc space narrowing disc instability+                			
-	                			</p>   		
-	                		</div> 
-	                	</div>
-	                	</div>
-	                	
-	                	<div class="border-top" style="display:none;">
-	                		<div class="cols3-1"></div>
-	                		<div class="cols3-1"></div>
-	                		<div class="cols3-1"></div>
-	                	</div>
-	                	</li>
-	                	
-	                	<li>
-	                	</li>
-	                	</ul>	          	
-	                </div>   	
+	                <li  class="slider_patient_li">
+                            <div class="border-top">
+                                <h2 class="title">환자진료기록</h2>
+                                <div class="calander-wrap">
+     
+                                    <div class="pull-left date-select">
+                                        2016/01/01<img src="../img/button/select_btn.png" class="select-btn">
+                                    <div class="date-select-div" >
+                                        <div class="year relative text-center"><a href="#0" class="absolute" style="top:5px; left:10px;"><i class="icon-arrow-left"></i></a>2016년 06월<a href="#0" class="absolute" style="top:5px; right:10px"><i class="icon-arrow-right"></i></a></div>
+	                		<div class="content">
+                                        <table class="calander">
+                                            <tr>
+                                                <td class="sun opacity"><span>27</span></td>
+                                                <td class="opacity"><span>28</span></td>
+                                                <td class="opacity"><span>29</span></td>
+                                                <td class="opacity"><span>30</span></td>
+                                                <td class="opacity"><span>31</span></td>
+                                                <td class="active"><span>1</span></td>
+                                                <td><span>2</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun "><span>3</span></td>
+                                                <td><span>4</span></td>
+                                                <td><span>5</span></td>
+                                                <td><span>6</span></td>
+                                                <td><span>7</span></td>
+                                                <td><span>8</span></td>
+                                                <td><span>9</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun "><span>10</span></td>
+                                                <td><span>11</span></td>
+                                                <td><span>12</span></td>
+                                                <td><span>13</span></td>
+                                                <td><span>14</span></td>
+                                                <td><span>15</span></td>
+                                                <td><span>16</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun "><span>17</span></td>
+                                                <td><span>18</span></td>
+                                                <td><span>19</span></td>
+                                                <td><span>20</span></td>
+                                                <td><span>21</span></td>
+                                                <td><span>22</span></td>
+                                                <td><span>23</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun "><span>24</span></td>
+                                                <td><span>25</span></td>
+                                                <td><span>26</span></td>
+                                                <td><span>27</span></td>
+                                                <td><span>28</span></td>
+                                                <td><span>29</span></td>
+                                                <td><span>30</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun "><span>31</span></td>
+                                                <td><span></span></td>
+                                                <td><span></span></td>
+                                                <td><span></span></td>
+                                                <td><span></span></td>
+                                                <td><span></span></td>
+                                                <td><span></span></td>
+                                            </tr>
+                                        </table>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    
+                                    <div class="pull-left mgl20 date-select">
+                                        2016/02/01<img src="../img/button/select_btn.png" class="select-btn">
+                                    <div class="date-select-div" >
+                                        <div class="year relative text-center"><a href="#0" class="absolute" style="top:5px; left:10px;"><i class="icon-arrow-left"></i></a>2016년 06월<a href="#0" class="absolute" style="top:5px; right:10px"><i class="icon-arrow-right"></i></a></div>
+	                		<div class="content">
+                                        <table class="calander">
+                                            <tr>
+                                                <td class="sun opacity"><span>27</span></td>
+                                                <td class="opacity"><span>28</span></td>
+                                                <td class="opacity"><span>29</span></td>
+                                                <td class="opacity"><span>30</span></td>
+                                                <td class="opacity"><span>31</span></td>
+                                                <td class="active"><span>1</span></td>
+                                                <td><span>2</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun "><span>3</span></td>
+                                                <td><span>4</span></td>
+                                                <td><span>5</span></td>
+                                                <td><span>6</span></td>
+                                                <td><span>7</span></td>
+                                                <td><span>8</span></td>
+                                                <td><span>9</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun "><span>10</span></td>
+                                                <td><span>11</span></td>
+                                                <td><span>12</span></td>
+                                                <td><span>13</span></td>
+                                                <td><span>14</span></td>
+                                                <td><span>15</span></td>
+                                                <td><span>16</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun "><span>17</span></td>
+                                                <td><span>18</span></td>
+                                                <td><span>19</span></td>
+                                                <td><span>20</span></td>
+                                                <td><span>21</span></td>
+                                                <td><span>22</span></td>
+                                                <td><span>23</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun "><span>24</span></td>
+                                                <td><span>25</span></td>
+                                                <td><span>26</span></td>
+                                                <td><span>27</span></td>
+                                                <td><span>28</span></td>
+                                                <td><span>29</span></td>
+                                                <td><span>30</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun "><span>31</span></td>
+                                                <td><span></span></td>
+                                                <td><span></span></td>
+                                                <td><span></span></td>
+                                                <td><span></span></td>
+                                                <td><span></span></td>
+                                                <td><span></span></td>
+                                            </tr>
+                                        </table>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="pull-right date-select">
+                                        전체<img src="../img/button/select_btn.png" class="select-btn">
+                                    </div>
+                                </div>
+                                
+                                <div class="content">
+                                    <ul class="slider2-list-up">
+                                        <img src="../img/list-down.png" class="list-up-img">
+                                        <li data-link="1">
+                                            <p class="text bold">Consultation</p>
+                                            <p>2016/01/12 OS with Dr 김소희</p>
+                                            <span class="li-btn"><i class="icon-arrow-right "></i></span>
+                                        </li>
+                                        <li data-link="2">
+                                            <p class="text bold">Immunisation (NSAIDs)</p>
+                                            <p>2016/01/25 Ward with RN 박보검</p>
+                                            <span class="li-btn"><i class="icon-arrow-right "></i></span>
+                                        </li>
+                                        <li data-link="3">
+                                            <p class="text bold">L-CT Test</p>
+                                            <p>2016/01/28 LAB with RN 박보검</p>
+                                            <span class="li-btn"><i class="icon-arrow-right "></i></span>
+                                           
+                                        </li>
+                                        <li  class="hide" data-link="3">
+                                            <p>L4-5 ruptured HNP and inferiormigration</p>
+                                            <p class="text-right text sm mgt10">2016.01.18 15:00 PM</p>         
+                                        </li>
+                                        <li data-link="4">
+                                            <p class="text bold">L-CT Test Result</p>
+                                            <p>2016/01/30 OS with Dr 김소희</p>
+                                            <span class="li-btn"><i class="icon-arrow-right "></i></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="border-top mgt20">
+                                <h2 class="title">다가올 진료</h2>
+                                <div class="calander-wrap">
+                                    <div class="pull-left date-select">
+                                        2016/01/01<img src="../img/button/select_btn.png" class="select-btn">
+                                    <div class="date-select-div" >
+                                        <div class="year relative text-center"><a href="#0" class="absolute" style="top:5px; left:10px;"><i class="icon-arrow-left"></i></a>2016년 06월<a href="#0" class="absolute" style="top:5px; right:10px"><i class="icon-arrow-right"></i></a></div>
+	                		<div class="content">
+                                        <table class="calander">
+                                            <tr>
+                                                <td class="sun opacity"><span>27</span></td>
+                                                <td class="opacity"><span>28</span></td>
+                                                <td class="opacity"><span>29</span></td>
+                                                <td class="opacity"><span>30</span></td>
+                                                <td class="opacity"><span>31</span></td>
+                                                <td class="active"><span>1</span></td>
+                                                <td><span>2</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun "><span>3</span></td>
+                                                <td><span>4</span></td>
+                                                <td><span>5</span></td>
+                                                <td><span>6</span></td>
+                                                <td><span>7</span></td>
+                                                <td><span>8</span></td>
+                                                <td><span>9</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun "><span>10</span></td>
+                                                <td><span>11</span></td>
+                                                <td><span>12</span></td>
+                                                <td><span>13</span></td>
+                                                <td><span>14</span></td>
+                                                <td><span>15</span></td>
+                                                <td><span>16</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun "><span>17</span></td>
+                                                <td><span>18</span></td>
+                                                <td><span>19</span></td>
+                                                <td><span>20</span></td>
+                                                <td><span>21</span></td>
+                                                <td><span>22</span></td>
+                                                <td><span>23</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun "><span>24</span></td>
+                                                <td><span>25</span></td>
+                                                <td><span>26</span></td>
+                                                <td><span>27</span></td>
+                                                <td><span>28</span></td>
+                                                <td><span>29</span></td>
+                                                <td><span>30</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun "><span>31</span></td>
+                                                <td><span></span></td>
+                                                <td><span></span></td>
+                                                <td><span></span></td>
+                                                <td><span></span></td>
+                                                <td><span></span></td>
+                                                <td><span></span></td>
+                                            </tr>
+                                        </table>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="pull-left mgl20 date-select">
+                                        2016/02/01<img src="../img/button/select_btn.png" class="select-btn">
+                                    <div class="date-select-div" >
+                                        <div class="year relative text-center"><a href="#0" class="absolute" style="top:5px; left:10px;"><i class="icon-arrow-left"></i></a>2016년 06월<a href="#0" class="absolute" style="top:5px; right:10px"><i class="icon-arrow-right"></i></a></div>
+	                		<div class="content">
+                                        <table class="calander">
+                                            <tr>
+                                                <td class="sun opacity"><span>27</span></td>
+                                                <td class="opacity"><span>28</span></td>
+                                                <td class="opacity"><span>29</span></td>
+                                                <td class="opacity"><span>30</span></td>
+                                                <td class="opacity"><span>31</span></td>
+                                                <td class="active"><span>1</span></td>
+                                                <td><span>2</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun "><span>3</span></td>
+                                                <td><span>4</span></td>
+                                                <td><span>5</span></td>
+                                                <td><span>6</span></td>
+                                                <td><span>7</span></td>
+                                                <td><span>8</span></td>
+                                                <td><span>9</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun "><span>10</span></td>
+                                                <td><span>11</span></td>
+                                                <td><span>12</span></td>
+                                                <td><span>13</span></td>
+                                                <td><span>14</span></td>
+                                                <td><span>15</span></td>
+                                                <td><span>16</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun "><span>17</span></td>
+                                                <td><span>18</span></td>
+                                                <td><span>19</span></td>
+                                                <td><span>20</span></td>
+                                                <td><span>21</span></td>
+                                                <td><span>22</span></td>
+                                                <td><span>23</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun "><span>24</span></td>
+                                                <td><span>25</span></td>
+                                                <td><span>26</span></td>
+                                                <td><span>27</span></td>
+                                                <td><span>28</span></td>
+                                                <td><span>29</span></td>
+                                                <td><span>30</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun "><span>31</span></td>
+                                                <td><span></span></td>
+                                                <td><span></span></td>
+                                                <td><span></span></td>
+                                                <td><span></span></td>
+                                                <td><span></span></td>
+                                                <td><span></span></td>
+                                            </tr>
+                                        </table>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="pull-right date-select">
+                                        전체<img src="../img/button/select_btn.png" class="select-btn">
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <ul class="slider2-list-down">
+                                        <img src="../img/list-up.png" class="list-down-img">
+                                        <li data-link="1">
+                                            <p class="text bold">Consultation</p>
+                                            <p>2016/02/02 W with RN 박보검</p>
+                                            <span class="li-btn"><i class="icon-arrow-right "></i></span>
+                                        </li>
+                                        <li  class="hide" data-link="1">
+                                            <p>L4-5 ruptured HNP and inferiormigration</p>
+                                            <p class="text-right text sm mgt10">2016.01.18 15:00 PM</p>         
+                                        </li>
+                                        <li data-link="2">
+                                            <p class="text bold">OP rec (DIAM)</p>
+                                            <p>2016/02/15 OR with DR 김소희</p>
+                                            <span class="li-btn"><i class="icon-arrow-right "></i></span>
+                                        </li>
+                                        <li>
+                                            &nbsp;
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        
+                        </li>
+                        </ul>	          	
+	            </div>   	
                 </section>
+                           
                 <section id="hospital_room">
                		<div class="patient-head">
 	                    <h2 class="patient-select">병동406 <img src="../img/button/select_btn.png"class="select-btn"></h2>
@@ -1224,7 +1528,33 @@ $(document).ready(function() {
 		  $(this).html('수술').addClass('active').removeClass('icon-pill5');
 	  }
   });
-  
+   $('.slider2-list-up li').click(function(){
+            console.log("Dfdf");
+            var link = $(this).attr('data-link');
+            $('.slider2-list-up .list-up-img').attr("src","../img/list-down-expand.png");
+            $('.slider2-list-up li.hide[data-link="'+link+'"]').slideDown();
+    });
+    $('.slider2-list-down li').click(function(){
+            var link = $(this).attr('data-link');
+             console.log("Df22424df")
+            $('.slider2-list-down .list-down-img').attr("src","../img/list-up-expand.png");
+            $('.slider2-list-down li.hide[data-link="'+link+'"]').slideDown();
+    });
+    
+    $('.li-btn').click(function(){
+         event.stopImmediatePropagation();
+        if($(this).html()=='<i class="icon-arrow-right "></i>'){
+            $(this).html('<i class="icon-talk"></i><i class="icon-link"></i>'); 
+            $(this).css("margin-top","-20px");
+        }else{
+            $(this).html('<i class="icon-arrow-right "></i>');
+             $(this).css("margin-top","-6px");
+        }
+    });
+   $('.date-select .select-btn').click(function(){
+      $('.date-select-div').hide();
+      $(this).siblings('.date-select-div').show(); 
+   });
   $('.bxslider').bxSlider({
 	  auto: true,
 	  pager:false
