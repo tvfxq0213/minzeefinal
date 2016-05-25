@@ -408,6 +408,8 @@ li.off.active{background:rgba(51,58,78,1);  }
 .prev,.next{position:absolute; background:#00b0b4; border:1px solid #fff; border-radius:5px; color:#fff; width:24px; height:25px; text-align:center; text-decoration:none; font-size: 20px;line-height: 25px;}
 .patient_info{margin-top:10px;}
 .patient_info li{float:left; font-size:12px; line-height:1.5;  background:#f7f8f9; text-align:center;border:1px solid #c8cad1; padding: 5px 20px; margin-left:-1px;}
+.patient_info.width100 li{width:25%;}
+.patient_info.bgfff li{background:#fff; }
 .bxslider3 .chart-profile{width:115px; height:115px; margin-left:30px; border:2px solid #0db4b8;}
 .bxslider3 .clearfix {border-top:1px solid #c8cad1;}
 .bxslider3 .clearfix p{margin-left:30px;}
@@ -471,9 +473,17 @@ li.off.active{background:rgba(51,58,78,1);  }
 .patient-chart .info li{ color:#222436; font-size:18px;}
 .patient-chart .info i{color:#c0c4c9; font-size:18px; margin-right:5px;}
 .chart-date li{font-size:14px}
-
-
-
+.chart-img-sm{border-radius:50%; width:40px; height:40px; border:1px solid #ecedef; margin-right:15px; }
+.info-list{width:calc(100% - 120px);}
+.info-list li{width:100%; display:inline-block; padding:15px 30px; border-bottom:1px solid #ecedef; }
+.info-list li .pull-left:first-child{width:15%; }
+.info-list li .pull-left:last-child{width:calc(85% - 15px); }
+.info-list li:nth-child(3n+1){border-left: 2px solid #01afb4 }
+.info-list li:nth-child(3n+2){border-left: 2px solid #06c9be }
+.info-list li:nth-child(3n){border-left: 2px solid #3cd7a9; }
+.slider_patient li .cols2-1 {padding:20px;  border-bottom:1px solid #ecedef}
+.slider_patient li .cols2-1 ul.pull-left{width:calc(100% - 55px);}
+.patient-chart .bx-wrapper .bx-viewport{background:transparent;}
 /*section3*/
 .border-top.bg-white{margin-top:20px; background:#fff;}
 .orange_noti{background:#ff7610; color:white; font-size:11px; border:2px solid #fff; top:2px; left:2px; display:inline-block; width:30px; height:30px; text-align:center; line-height:28px}
@@ -541,7 +551,7 @@ ul.week li .bg-none{display:block; width:100%;   line-height:1.4; padding-left:1
 .li_today{width:100%; height:100%; border:1px solid #ff7610; top:0; left:0; background:transparent; position:absolute;  }
 .li_today.active{background:rgba(255,118,16,0.5);}
 ul.week li p{margin:0px 0 10px ; text-align:center;}
-.slider_patient li{width:577px !important; }
+.slider_patient .slider_patient_l1{width:577px !important; }
 #patient .bx-viewport{height:1000px !important;}
 #patient .bx-controls-direction{display:none;}
 
