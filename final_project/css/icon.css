@@ -98,14 +98,8 @@
 .icon-talk:before {
     content: "\e918";
 }
-.icon-water .path1:before {
+.icon-water:before {
     content: "\e919";
-    color: rgb(59, 184, 178);
-}
-.icon-water .path2:before {
-    content: "\e91a";
-    margin-left: -1em;
-    color: rgba(255, 255, 255, 0.4);
 }
 .icon-woman:before {
     content: "\e91b";
