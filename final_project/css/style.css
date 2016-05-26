@@ -95,7 +95,7 @@ li{margin:0; padding:0; list-style:none;}
 .mgt15{margin-top: 18px;}
 .mgt10{margin-top:10px !important;}
 .mgt20{margin-top:20px !important;}
-.mgb15{margin-bottom: 15px;}
+.mgb15{margin-bottom: 15px !important;}
 img{width:50%; max-width:402px;}
 
 .cols2-1{width:calc(50% - 2px); float:left}
@@ -158,7 +158,8 @@ img{width:50%; max-width:402px;}
         margin-top:0px;
         font-weight:normal; 	
 }
-
+.gradition-bottom{position:absolute; display:inline-block; width:100%; bottom:0; left:0; height:30px; -webkit-linear-gradient(bottom, rgba(255,255,255,0.65) 0%,rgba(0,0,0,0) 30%);}
+.gradition-top{position:absolute; display:inline-block; width:100%; top:0; left:0; height:30px;  -webkit-linear-gradient(top, rgba(255,255,255,0.65) 0%,rgba(0,0,0,0) 30%);}
 
 .checkbox1 input[type='checkbox']:checked + label {
         color:#808080;
