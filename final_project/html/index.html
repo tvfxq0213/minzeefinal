@@ -103,7 +103,7 @@
 					<span class="noti absolute circle">1</span>
 					<img src="../img/popup.png" class="absolute popup"/>
 					</li>
-					<li><i class="icon-setting"></i></li>
+					<li data-cate="final"><i class="icon-setting"></i></li>
 				</ul>
 				</div>
                 <section id="home">
@@ -348,7 +348,7 @@
 		                	<div class="clearfix"></div>
 		                	<ul class="pull-left info-list" >
 		                		<li>
-		                		 <div class="pull-left mgr15">
+		                		 <div class="pull-left text-right mgr15">
 		                		 <span class="text-gray sm">OS</span><br/>
 		                		 <span class="text bold lg">S</span><br/>
 		                		 <span class="text-mgray text sm">Dr 김은정</span>
@@ -364,7 +364,7 @@
 		                		 </div>
 		                		</li>
 		                		<li>
-		                			 <div class="pull-left mgr15">
+		                			 <div class="pull-left text-right mgr15">
 		                		 <span class="text-gray sm">OS</span><br/>
 		                		 <span class="text bold lg">P</span><br/>
 		                		 <span class="text-mgray text sm">Dr 김은정</span>
@@ -377,7 +377,7 @@
 		                		 </div>
 		                		</li>
 		                		<li>
-		                		<div class="pull-left mgr15">
+		                		<div class="pull-left text-right mgr15">
 		                		 <span class="text-gray sm">OS</span><br/>
 		                		 <span class="text bold lg">O</span><br/>
 		                		 <span class="text-mgray text sm">Dr 김소희</span>
@@ -741,8 +741,6 @@
                                         <li>
                                             &nbsp;
                                         </li>
-                                        <div class="gradition-top">
-                                        </div>
                                     </ul>
                                 </div>
                             </div>
@@ -1290,19 +1288,69 @@
                 </section>
                 <section id="daily_report">
                	 <div class="patient-head">
-	                    <h2 class="patient-select">2016/06/02<img src="../img/button/select_btn.png"class="select-btn"></h2>
+	                    <h2 class="patient-select">2016/06/02&nbsp; &nbsp;<img src="../img/button/select_btn.png"class="select-btn"></h2>
 	                	<p class="text-center"><span class="text-mint">OS</span> Ward</p>
-	                	<div class="select-list border-top">
-	                		<ul>
-	                			<li>2016/06/01</li>
-	                   			<li class="active">2016/06/02</li>
-	                			<li>2016/06/03</li>
-	                			<li>2016/06/04</li>
-	                			<li>2016/06/05</li>
-                                <li>2016/06/06</li>
-	                			<li>2016/06/07</li>
-	                		</ul>
-	                	</div>
+	                	 <div class="date-select-div" >
+                                        <div class="year relative text-center"><a href="#0" class="absolute" style="top:5px; left:10px;"><i class="icon-arrow-left"></i></a>2016년 06월<a href="#0" class="absolute" style="top:5px; right:10px"><i class="icon-arrow-right"></i></a></div>
+	                		<div class="content">
+                                        <table class="calander">
+                                            <tr>
+                                                <td class="sun opacity"><span>27</span></td>
+                                                <td class="opacity"><span>28</span></td>
+                                                <td class="opacity"><span>29</span></td>
+                                                <td class="opacity"><span>30</span></td>
+                                                <td class="opacity"><span>31</span></td>
+                                                <td class="active"><span>1</span></td>
+                                                <td><span>2</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun "><span>3</span></td>
+                                                <td><span>4</span></td>
+                                                <td><span>5</span></td>
+                                                <td><span>6</span></td>
+                                                <td><span>7</span></td>
+                                                <td><span>8</span></td>
+                                                <td><span>9</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun "><span>10</span></td>
+                                                <td><span>11</span></td>
+                                                <td><span>12</span></td>
+                                                <td><span>13</span></td>
+                                                <td><span>14</span></td>
+                                                <td><span>15</span></td>
+                                                <td><span>16</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun "><span>17</span></td>
+                                                <td><span>18</span></td>
+                                                <td><span>19</span></td>
+                                                <td><span>20</span></td>
+                                                <td><span>21</span></td>
+                                                <td><span>22</span></td>
+                                                <td><span>23</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun "><span>24</span></td>
+                                                <td><span>25</span></td>
+                                                <td><span>26</span></td>
+                                                <td><span>27</span></td>
+                                                <td><span>28</span></td>
+                                                <td><span>29</span></td>
+                                                <td><span>30</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun "><span>31</span></td>
+                                                <td><span></span></td>
+                                                <td><span></span></td>
+                                                <td><span></span></td>
+                                                <td><span></span></td>
+                                                <td><span></span></td>
+                                                <td><span></span></td>
+                                            </tr>
+                                        </table>
+                                        </div>
+                                    </div>
                 </div>
                     <div class="patient-chart relative">
                          
@@ -1317,50 +1365,50 @@
                         <h2 class="title">OS 병동 담당환자</H2>
                                   
                            <ul class="nurse">
-                                 <li>
+                                 <li data-no="1">
                                         <img src="../img/ex7.jpg" class="circle profile-img"/>
                                      	 장민지<br/>
                                         406-1
                                  </li>
-                                 <li class="relative">
+                                 <li  data-no="2" class="relative">
                                         <span class="circle absolute orange_noti">IN</span>
                                         <img src="../img/ex11.jpg" class="circle profile-img"/>
                                      	   안재현<br/>
                                         406-2
                                  </li>
-                                  <li class="relative">
+                                  <li  data-no="3" class="relative">
                                         <span class="circle absolute orange_noti">OUT</span>
                                         <img src="../img/ex4.jpg" class="circle profile-img"/>
                                  	       송중기<br/>
                                         406-3
                                  </li>
-                                  <li>
+                                  <li  data-no="4">
                                         <img src="../img/ex18.png" class="circle profile-img"/>
                                 	        김로마<br/>
                                         406-4
                                  </li>
-                                  <li>
+                                  <li  data-no="5">
                                         <img src="../img/ex17.png" class="circle profile-img"/>
                                   	       차학연<br/>
                                         406-5
                                  </li>
-                                  <li>
-                                        <span class="circle profile-img " style="background: #c6d2d8;"><i class="icon-cate2" style="    line-height: 60px;font-size: 50px;color: #fff;"></i></span>
-                                        -<br/>
-                                        406-6
+                                  <li  data-no="6">
+                                          <img src="../img/ex19.png" class="circle profile-img"/>
+                                        	최승현<br/>
+                                        409
                                  </li>
                            </ul>
 			</div>
-			<div class="border-top">
-				<h2 class="title">환자 이상 징후</h2>
-				<ul class="">
-					<li class="li_d">
-					<div class="pull-left">
+			<div class="border-top mgt20">
+				<h2 class="title">환자 이상 징후<span class="pull-right mgr20 text-gray sm">2016/06/02 12:00</span></h2>
+				<ul class="nurse_work_list height205">
+					<li class="li_d"  data-no="2">
+					<div class="pull-left width15">
 						<span class="text-gray sm">PM</span><br/>
 						<span class="">12:00</span><br/>
 						<span class="text-gray sm">3분전</span>
 					</div>
-					<img src="" class="profile pull-left">
+					<img src="../img/ex11.jpg" class="profile pull-left">
 					<div class="pull-left">
 					<span class="name">안재현</span> 32세 / <i class="text-mint icon-man"></i><br/>
 					OA, OS 병동406
@@ -1371,13 +1419,13 @@
 					Relieve symptoms
 					</div>
 					</li>
-					<li class="li_e">
-					<div class="pull-left">
+					<li class="li_e"  data-no="4">
+					<div class="pull-left width15">
 						<span class="text-gray sm">PM</span><br/>
 						<span class="">12:00</span><br/>
 						<span class="text-gray sm">1분전</span>
 					</div>
-					<img src="" class="profile pull-left">
+					<img src="../img/ex18.png" class="profile pull-left">
 					<div class="pull-left">
 					<span class="name">김로마</span> 7세 / <i class="text-mint icon-man"></i><br/>
 					THR, OS 병동406
@@ -1388,16 +1436,50 @@
 					Steroids negative
 					</div>
 					</li>
-					<li class="li_d">
-					<div class="pull-left">
+					<li class="li_d"  data-no="4">
+					<div class="pull-left width15">
 						<span class="text-gray sm">AM</span><br/>
 						<span class="">11:00</span><br/>
-						<span class="text-gray sm">3분전</span>
+						<span class="text-gray sm">1시간전</span>
 					</div>
-					<img src="" class="profile pull-left">
+					<img src="../img/ex18.png" class="profile pull-left">
 					<div class="pull-left">
 					<span class="name">김로마</span> 7세 / <i class="text-mint icon-man"></i><br/>
 					THR, OS 병동406
+					</div>
+					<i class="icon-food lg-icon pull-left "></i>
+					<div class="pull-left">
+					<span class="text lg bold">LPO <span class="text lg text-mint">></span> LD</span><br/>
+					Relieve symptoms
+					</div>
+					</li>
+					<li class="li_g"  data-no="3">
+					<div class="pull-left width15">
+						<span class="text-gray sm">AM</span><br/>
+						<span class="">09:00</span><br/>
+						<span class="text-gray sm">3시간전</span>
+					</div>
+					<img src="../img/ex4.jpg" class="profile pull-left">
+					<div class="pull-left">
+					<span class="name">송중기</span> 22세 / <i class="text-mint icon-man"></i><br/>
+					RA, OS 병동406
+					</div>
+					<i class="icon-pill4 lg-icon pull-left "></i>
+					<div class="pull-left">
+					<span class="text lg bold">QD </span><br/>
+					Everyday IV Med
+					</div>
+					</li>
+					<li class="li_g"  data-no="1">
+					<div class="pull-left width15">
+						<span class="text-gray sm">AM</span><br/>
+						<span class="">09:00</span><br/>
+						<span class="text-gray sm">3시간전</span>
+					</div>
+					<img src="../img/ex7.jpg" class="profile pull-left">
+					<div class="pull-left">
+					<span class="name">장민지</span> 23세 / <i class="text-mint icon-woman"></i><br/>
+					Fx, OS 병동406
 					</div>
 					<i class="icon-food lg-icon pull-left "></i>
 					<div class="pull-left">
@@ -1408,79 +1490,119 @@
 				</ul>
 			</div>
 			<div class="border-top mgt20">
-				<h2 class="title">업무 진행 상황</h2>
-				<ul class="">
-					<li class="li_n">
-					<div class="pull-left">
+				<h2 class="title">업무 진행 상황 <span class="pull-right mgr20 text-gray sm">2016/06/02 12:00</span></h2>
+				<ul class="nurse_work_list height385">
+					<li class="li_n"  data-no="1">
+					<div class="pull-left width15">
 						<span class="text-gray sm">PM</span><br/>
 						<span class="">12:00</span><br/>
 						<span class="text-gray sm">3분전</span>
 					</div>
-					<img src="" class="profile pull-left">
+					<img src="../img/ex7.jpg" class="profile pull-left">
+					<div class="pull-left">
+					<span class="name">장민지</span> 23세 / <i class="text-mint icon-woman"></i><br/>
+					Fx, OS 병동406
+					</div>
+					<i class="icon-pill3 lg-icon pull-left "></i>
+					<div class="pull-left">
+					<span class="text lg bold">DS/DW</span><br/>
+					200ml Med
+					</div>
+					<div class="clearfix">
+					 	<div class="pull-left width15"><span class="sm">RN 김소희</span></div>
+					 	<div class="mgl15 pull-left">Due to the fluid injection asthenia Suspected low blood pressure</div>
+					</div>
+					</li>
+					<li class="li_n"  data-no="6">
+					<div class="pull-left width15">
+						<span class="text-gray sm">AM</span><br/>
+						<span class="">11:45</span><br/>
+						<span class="text-gray sm">15분전</span>
+					</div>
+					<img src="../img/ex19.png" class="profile pull-left">
+					<div class="pull-left">
+					<span class="name">최승현</span> 28세 / <i class="text-mint icon-man"></i><br/>
+					RA, OS 병동409
+					</div>
+					<i class="icon-pill3 lg-icon pull-left "></i>
+					<div class="pull-left">
+					<span class="text lg bold">DS/DW</span><br/>
+					200ml Med
+					</div>
+					<div class="clearfix">
+					 	<div class="width15 pull-left"><span class="sm">RN 김소희</span></div>
+					 	<div class=" mgl15 pull-left">Due to the fluid injection asthenia Suspected low blood pressure</div>
+					</div>
+					</li>
+					<li class="li_fi"  data-no="5">
+					<div class="pull-left width15">
+						<span class="text-gray sm">AM</span><br/>
+						<span class="">10:30</span><br/>
+						<span class="text-gray sm">1시간전</span>
+					</div>
+					<img src="../img/ex17.png" class="profile pull-left">
+					<div class="pull-left">
+					<span class="name">차학연</span> 25세 / <i class="text-mint icon-man"></i><br/>
+					Fx, OS 병동406
+					</div>
+					<i class="icon-pill5 lg-icon pull-left "></i>
+					<div class="pull-left">
+					<span class="text lg bold">ORIF</span><br/>
+					OP 강동원 OR 402
+					</div>
+					<div class="clearfix">
+					 	<div class="width15 pull-left"><span class="sm">RN 박보검</span></div>
+					 	<div class="mgl15 pull-left">Fractures caused by bruising open reduction and internal fixation</div>
+					</div>
+					</li>
+					<li class="li_fo"  data-no="2">
+					<div class="pull-left width15">
+						<span class="text-gray sm">AM</span><br/>
+						<span class="">10:00</span><br/>
+						<span class="text-gray sm">3시간전</span>
+					</div>
+					<img src="../img/ex11.jpg" class="profile pull-left">
 					<div class="pull-left">
 					<span class="name">안재현</span> 32세 / <i class="text-mint icon-man"></i><br/>
 					OA, OS 병동406
 					</div>
-					<i class="icon-food lg-icon pull-left "></i>
+					<i class="icon-pill4 lg-icon pull-left "></i>
 					<div class="pull-left">
-					<span class="text lg bold">LPO <span class="text lg text-mint">></span> LD</span><br/>
-					Relieve symptoms
+					<span class="text lg bold">CBC</span><br/>
+					IV 30min
+					</div>
+					<div class="clearfix">
+					 	<div class="pull-left width15"><span class="sm">RN 박보검</span></div>
+					 	<div class="mgl15 pull-left">Blood tests to check your platelet progress No longer in reaction test</div>
 					</div>
 					</li>
-					<li class="li_n">
-					<div class="pull-left">
+					<li class="li_d"  data-no="1">
+					<div class="pull-left width15">
 						<span class="text-gray sm">PM</span><br/>
 						<span class="">12:00</span><br/>
-						<span class="text-gray sm">1분전</span>
+						<span class="text-gray sm">3분전</span>
 					</div>
-					<img src="" class="profile pull-left">
+					<img src="../img/ex7.jpg" class="profile pull-left">
 					<div class="pull-left">
-					<span class="name">김로마</span> 7세 / <i class="text-mint icon-man"></i><br/>
-					THR, OS 병동406
+					<span class="name">장민지</span> 23세 / <i class="text-mint icon-woman"></i><br/>
+					Fx, OS 병동406
 					</div>
 					<i class="icon-pill2 lg-icon pull-left "></i>
 					<div class="pull-left">
-					<span class="text lg bold">BID <span class="text lg text-mint">></span> QID</span><br/>
-					Steroids negative
+					<span class="text lg bold">DS/DW</span><br/>
+					200ml Med
 					</div>
-					</li>
-					<li class="li_fi">
-					<div class="pull-left">
-						<span class="text-gray sm">AM</span><br/>
-						<span class="">11:00</span><br/>
-						<span class="text-gray sm">3분전</span>
-					</div>
-					<img src="" class="profile pull-left">
-					<div class="pull-left">
-					<span class="name">김로마</span> 7세 / <i class="text-mint icon-man"></i><br/>
-					THR, OS 병동406
-					</div>
-					<i class="icon-food lg-icon pull-left "></i>
-					<div class="pull-left">
-					<span class="text lg bold">LPO <span class="text lg text-mint">></span> LD</span><br/>
-					Relieve symptoms
-					</div>
-					</li>
-					<li class="li_fo">
-					<div class="pull-left">
-						<span class="text-gray sm">AM</span><br/>
-						<span class="">11:00</span><br/>
-						<span class="text-gray sm">3분전</span>
-					</div>
-					<img src="" class="profile pull-left">
-					<div class="pull-left">
-					<span class="name">김로마</span> 7세 / <i class="text-mint icon-man"></i><br/>
-					THR, OS 병동406
-					</div>
-					<i class="icon-food lg-icon pull-left "></i>
-					<div class="pull-left">
-					<span class="text lg bold">LPO <span class="text lg text-mint">></span> LD</span><br/>
-					Relieve symptoms
+					<div class="clearfix">
+					 	<div class="pull-left width15"><span class="sm">RN 김소희</span></div>
+					 	<div class="pull-left mgl15">Due to the fluid injection asthenia Suspected low blood pressure</div>
 					</div>
 					</li>
 				</ul>
 			</div>
                     </div>
+                </section>
+                <section id="final" class="text-center">
+                	<img src="../img/final.png" style="max-width:466px; width:100%; margin-top:150px"/>
                 </section>
 			</div>
 		
@@ -1537,14 +1659,9 @@ $(document).ready(function() {
     
   });
   
-  $('.category-list li').click(function(){
+  $('.category-list li , .contents-head li').click(function(){
   	var cate = $("#"+$(this).attr("data-cate")+"");
-  	
-    
-    if($(this).attr("data-cate")=="home"){
-    	  $('#home .div5 img.chart_gif').attr("src",'');
-  	 	$('#home .div5 img.chart_gif').attr("src",'../img/chart.gif');
-    }
+  	 
   	$('.contents-tab section').hide();
   	 $('.category-list li').removeClass('active');
   	$(cate).css("display","inline-block");
@@ -1685,6 +1802,17 @@ $(document).ready(function() {
    $('.date-select .select-btn').click(function(){
       $('.date-select-div').hide();
       $(this).siblings('.date-select-div').show(); 
+   });
+   $('#daily_report .select-btn').click(function(){
+	   $('#daily_report .date-select-div').show();
+   });
+   
+   $('#daily_report .nurse li').click(function(){
+	  var no = $(this).attr('data-no');
+	  $('#daily_report .nurse li').removeClass('active');
+	  $(this).addClass('active');
+	  $('.nurse_work_list li').hide();
+	  $('.nurse_work_list li[data-no="'+no+'"]').show();
    });
   $('.bxslider').bxSlider({
 	  auto: true,
