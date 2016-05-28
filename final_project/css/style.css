@@ -534,8 +534,8 @@ li.off.active{background:rgba(51,58,78,1);  }
 .slider2-list-down li .icon-arrow-right , .slider2-list-up li .icon-arrow-right { font-size:12px; color:#dcdee0; opacity: 0.5;}
 .date-select-div{left:-20px; display:none; width:240px; height:190px; position:absolute; top:38px;  background:#333a4e;  border:1px solid #333a4e;z-index:5;}
 .date-select-div:after{ background: url(../img/triangle_navy.png); content:""; width:9px; height:7px; position:absolute; top:-7px; right:50%; margin-right:-5px; }
-.date-select-div .year{color:white !important;  line-height:25px; width:100%; height:25px}
-.date-select-div .year i{color:white; font-size:12px; vertical-align:3px;}
+.date-select-div .year{font-size:15px; color:white !important;  line-height:25px; width:100%; height:25px}
+.date-select-div .year i{color:white; font-size:12px; vertical-align:5px;}
 .date-select-div .content{background:#fff; width:100%; padding-left:10px;}
 /*section 4 */
 .month.select-list.border-top{display:none; border-radius:10px 0 0 10px; top:38px; right:232px;width:240px; background:#333a4e; position:absolute; z-index:5;}
@@ -591,3 +591,16 @@ ul.week li p{margin:0px 0 10px ; text-align:center;}
 #patient .bx-controls-direction{display:none;}
 
 div.footer{background:#000; position:absolute; bottom:0; height:44px; border:none; width:100%; }
+
+.day{background:#00b0b4; border:1px solid #00b0b4;}
+.evening{background:#05cabf; border:1px solid #05cabf;}
+.night{background:#46d6ac; border:1px solid #46d6ac;}
+.off{background:#333a4e; border:1px solid #333a4e}
+.forth{background:#80e9a3;}
+.fifth{background:#61f2b7;}
+
+.li_d{border-left:4px solid #00b0b4}
+.li_e{border-left:4px solid #05cabf}
+.li_n{border-left:4px solid #46d6ac;}
+.li_fi{border-left:4px solid #80e9a3;}
+.li_fo{border-left:4px solid #61f2b7;}
