@@ -311,7 +311,7 @@
 	                	
 	                
 	                	</div>
-                        <ul class="slider_patient">
+                        <ul class="slider_patient_ul">
                                
                         <li class="slider_patient_li">    
 	                	<div class="border-top" >
@@ -555,7 +555,7 @@
                                 
                                 <div class="content">
                                     <ul class="slider2-list-up">
-                                        <img src="../img/list-down.png" class="list-up-img">
+                                        <img src="../img/list-down.png" class="list-up-img"/>
                                         <div class="gradition-top">
                                         </div>
                                         <li data-link="1">
@@ -582,6 +582,9 @@
                                             <p class="text bold">L-CT Test Result</p>
                                             <p>2016/01/30 OS with Dr 김소희</p>
                                             <span class="li-btn"><i class="icon-arrow-right "></i></span>
+                                        </li>
+                                         <li data-link="4">
+                                           &nbsp;
                                         </li>
                                     </ul>
                                 </div>
@@ -1776,27 +1779,44 @@ $(document).ready(function() {
 		  $(this).html('수술').addClass('active').removeClass('icon-pill5');
 	  }
   });
-   $('.slider2-list-up li').click(function(){
+ /*  $('.slider2-list-up li').click(function(){
             console.log("Dfdf");
             var link = $(this).attr('data-link');
             $('.slider2-list-up .list-up-img').attr("src","../img/list-down-expand.png");
             $('.slider2-list-up li.hide[data-link="'+link+'"]').slideDown();
     });
-    $('.slider2-list-down li').click(function(){
-            var link = $(this).attr('data-link');
-             console.log("Df22424df")
-            $('.slider2-list-down .list-down-img').attr("src","../img/list-up-expand.png");
-            $('.slider2-list-down li.hide[data-link="'+link+'"]').slideDown();
+    $('.slider2-list-down li .icon-talk').click(function(){
+          
     });
-    
-    $('.li-btn').click(function(){
+   */ 
+   $('.slider2-list-up .li-btn').click(function(){
          event.stopImmediatePropagation();
+        var link = $(this).parent().attr('data-link');
         if($(this).html()=='<i class="icon-arrow-right "></i>'){
             $(this).html('<i class="icon-talk"></i><i class="icon-link"></i>'); 
             $(this).css("margin-top","-20px");
+            $('.slider2-list-up .list-up-img').attr("src","../img/list-down.png");
+            $('.slider2-list-up li.hide[data-link="'+link+'"]').slideUp();
         }else{
             $(this).html('<i class="icon-arrow-right "></i>');
              $(this).css("margin-top","-6px");
+            $('.slider2-list-up .list-up-img').attr("src","../img/list-down-expand.png");
+            $('.slider2-list-up li.hide[data-link="'+link+'"]').slideDown();
+        }
+    });
+   $('.slider2-list-down .li-btn').click(function(){
+         event.stopImmediatePropagation();
+        var link = $(this).parent().attr('data-link');
+        if($(this).html()=='<i class="icon-arrow-right "></i>'){
+            $(this).html('<i class="icon-talk"></i><i class="icon-link"></i>'); 
+            $(this).css("margin-top","-20px");
+            $('.slider2-list-down .list-down-img').attr("src","../img/list-up.png");
+            $('.slider2-list-down li.hide[data-link="'+link+'"]').slideUp();
+        }else{
+            $(this).html('<i class="icon-arrow-right "></i>');
+             $(this).css("margin-top","-6px");
+               $('.slider2-list-down .list-down-img').attr("src","../img/list-up-expand.png");
+            $('.slider2-list-down li.hide[data-link="'+link+'"]').slideDown();
         }
     });
    $('.date-select .select-btn').click(function(){
@@ -1823,16 +1843,12 @@ $(document).ready(function() {
 	  pager:false
   });
   $('.bxslider3').bxSlider({
-	   maxSlides:1,
-       slideWidth: 578,
+	
 	  auto: true,
 	  pager:false
   });
   
-   $('.slider_patient').bxSlider({
-       maxSlides:1,
-       slideWidth: 577,
-  });
+   $('.slider_patient_ul').bxSlider();
   $('.icon-noti').click(function(){
 	  if($('.popup').css('display')=="none"){
 		 $('.popup').show();
