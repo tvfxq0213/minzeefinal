@@ -330,16 +330,16 @@
 	                	<div class="content">
 		                	<div class="cols2-1 pull-left">
 		                		<p class="mgb15">보호자</p>
-		                		<img src="../img/ex1.png" class="pull-left chart-img-sm"/>
-		                		<ul class="pull-left ">
-		                			<li>김대장 (자매)</li>
+		                		<img src="../img/ex5.jpg" class="pull-left chart-img-sm"/>
+		                		<ul class="pull-leㄹt ">
+		                			<li>장나래 (25)</li>
 		                			<li><i class="icon-call text sm text-gray"></i> 010 - 1234 - 6454 </li>
 		                			
 		                		</ul>
 		                	</div>
 		                	<div class="cols2-1 pull-right">
 		                		<p class="mgb15">담당의사</p>
-		                		<img src="../img/ex1.png" class="pull-left chart-img-sm"/>
+		                		<img src="../img/ex9.jpg" class="pull-left chart-img-sm"/>
 		                		<ul class="pull-left ">
 		                			<li>김은정 (26)</li>
 		                			<li><i class="icon-call text sm text-gray"></i> 010 - 1234 - 6454 </li>
@@ -356,8 +356,7 @@
 		                		 <div class="pull-left">
 		                		 	<p>LBP c Lt. buttock pain.<br/>
 		                		 	agg 4일전 LBP 지속
-		                		 	</p>
-		                		 	<p class="mgt10">
+		                		 	<br/>
 		                		 	L-spine simple x-ray<br/>
 		                		 	L4-5 disc space narrowing disc space instability+
 		                		 	</p>
@@ -742,6 +741,9 @@
                                             <span class="li-btn"><i class="icon-arrow-right "></i></span>
                                         </li>
                                         <li>
+                                            &nbsp;
+                                        </li>
+                                         <li>
                                             &nbsp;
                                         </li>
                                     </ul>
@@ -1819,13 +1821,6 @@ $(document).ready(function() {
             $('.slider2-list-down li.hide[data-link="'+link+'"]').slideDown();
         }
     });
-   $('.date-select .select-btn').click(function(){
-      $('.date-select-div').hide();
-      $(this).siblings('.date-select-div').show(); 
-   });
-   $('#daily_report .select-btn').click(function(){
-	   $('#daily_report .date-select-div').show();
-   });
    
    $('#daily_report .nurse li').click(function(){
 	  var no = $(this).attr('data-no');
@@ -1877,7 +1872,26 @@ $(document).ready(function() {
 		 $('.select-list').hide();
 	 }
   });
-  
+     $('.date-select .select-btn').click(function(){
+      $('.date-select-div').hide();
+      
+       if($(this).siblings('.date-select-div').css("display")=="block"){
+           $(this).siblings('.date-select-div').hide(); 
+           console.log(dfdfdf);
+       }else{
+	  $(this).siblings('.date-select-div').show(); 
+          
+       }
+   });
+   $('#daily_report .select-btn').click(function(){
+       if($(this).siblings('#daily_report .date-select-div').css("display")=="block"){
+            $('#daily_report .date-select-div').hide();
+         
+       }else{
+	   $('#daily_report .date-select-div').show();
+          
+       }
+   });
   $('ul.week li').click(function(){
 	 var content = $(this).attr('data-date');
 	 var nth = $(this).parent().attr('data-nth');
