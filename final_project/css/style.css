@@ -158,8 +158,14 @@ img{width:50%; max-width:402px;}
         margin-top:0px;
         font-weight:normal; 	
 }
-.gradition-bottom{position:absolute; display:inline-block; width:100%; bottom:0; left:0; height:30px; -webkit-linear-gradient(bottom, rgba(255,255,255,0.65) 0%,rgba(0,0,0,0) 30%);}
-.gradition-top{position:absolute; display:inline-block; width:100%; top:0; left:0; height:30px;  -webkit-linear-gradient(top, rgba(255,255,255,0.65) 0%,rgba(0,0,0,0) 30%);}
+.gradition-bottom{position: absolute;
+    display: inline-block;
+    width: 100%;
+    bottom: -40px;
+    left: 0;
+    height: 50px;
+    background: -webkit-linear-gradient(top,rgba(0,0,0,0) 10%,rgba(255,255,255,0.8) 100%);}
+.gradition-top{position:absolute; display:inline-block; width:100%; top:0; left:0; height:30px;  background: -webkit-linear-gradient(top, rgba(255,255,255,0.65) 30%,rgba(0,0,0,0) 100%);}
 
 .checkbox1 input[type='checkbox']:checked + label {
         color:#808080;
@@ -607,7 +613,7 @@ div.footer{background:#000; position:absolute; bottom:0; height:44px; border:non
 .nurse_work_list li .lg-icon.icon-pill5{background:#61f2b7}
 .nurse_work_list li .pull-left:nth-child(5n+3){width:125px; font-size:14px; margin-top:5px;}
 .nurse_work_list li .pull-left:nth-child(5n){margin-top:5px;}
-.nurse_work_list li .clearfix{margin-top:5px; display:inline-block; width:100%;}
+.nurse_work_list li .clearfix{ display:inline-block; width:100%;}
 .nurse_work_list li .pull-left.mgl15{font-size:14px;}
 .nurse_work_list{overflow-y:auto;}
 .nurse_work_list li{border-bottom: 1px solid #e7e8ea; padding: 10px 0; background:#fff; margin-bottom:-3px;width:100%; display:inline-block;}

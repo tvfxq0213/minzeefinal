@@ -723,9 +723,10 @@
                                         전체<img src="../img/button/select_btn.png" class="select-btn">
                                     </div>
                                 </div>
-                                <div class="content">
+                                <div class="content ">
                                     <ul class="slider2-list-down">
                                         <img src="../img/list-up.png" class="list-down-img">
+                                        
                                         <li data-link="1">
                                             <p class="text bold">Consultation</p>
                                             <p>2016/02/02 W with RN 박보검</p>
@@ -746,7 +747,10 @@
                                          <li>
                                             &nbsp;
                                         </li>
+                                         <div class="gradition-bottom">
+                                     	 </div>
                                     </ul>
+                                    
                                 </div>
                             </div>
                         
@@ -1659,9 +1663,13 @@ $(document).ready(function() {
         $(that).removeClass("success processing");
       }, submitPhase2);
     }, submitPhase1);
-    $('#home .div5 img.chart_gif').attr("src",'');
-    $('#home .div5 img.chart_gif').attr("src",'../img/chart.gif');
+  
     
+  });
+  
+  $('.logo').click(function(){
+	 $('.main').removeClass('active').hide();
+	 $('.login').addClass('active').show();
   });
   
   $('.category-list li , .contents-head li').click(function(){
@@ -1960,9 +1968,19 @@ function startTime() {
     $('ul.week li:eq('+d+') p').html(dd);
     for(var i=0 ; i<7; i++){
     	if(i>d){
+    		
     		$('ul.week li:eq('+i+') p').html(dd+(i-d));
+    		
     	}else if(i<d){
+    		if(dd-(d-i)==0){
+    			$('ul.week li:eq('+i+') p').html(31);
+    		}else if(dd-(d-i)==(-1)){
+    			$('ul.week li:eq('+i+') p').html(30);
+    		}else if(dd-(d-i)==(-2)){
+    			$('ul.week li:eq('+i+') p').html(29);
+    		}else{
     		$('ul.week li:eq('+i+') p').html(dd-(d-i));
+    		}
     	}
     }
     var t = setTimeout(startTime, 6000);
