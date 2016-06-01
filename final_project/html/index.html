@@ -1879,8 +1879,18 @@ $(document).ready(function() {
 	 }else{
 		 $('.select-list').hide();
 	 }
+	 
+     if($(this).siblings('.date-select-div').css("display")=="block"){
+         $(this).siblings('.date-select-div').hide(); 
+     }else{
+	  $(this).siblings('.date-select-div').show(); 
+        
+     }
   });
-     $('.date-select .select-btn').click(function(){
+   /*  $('.date-select .select-btn').click(function(){
+    	 
+    	 event.preventDefault();
+    	 console.log('1883');
       $('.date-select-div').hide();
       
        if($(this).siblings('.date-select-div').css("display")=="block"){
@@ -1890,7 +1900,7 @@ $(document).ready(function() {
 	  $(this).siblings('.date-select-div').show(); 
           
        }
-   });
+   });*/
    $('#daily_report .select-btn').click(function(){
        if($(this).siblings('#daily_report .date-select-div').css("display")=="block"){
             $('#daily_report .date-select-div').hide();
