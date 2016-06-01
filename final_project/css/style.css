@@ -306,7 +306,7 @@ display:inline-block;
 .contents-tab .contents-head li{float:left; width:45px; text-align:center; border-right:1px solid #e7e8ea; height:45px;}
 .contents-tab .contents-head i{font-size:20px; display:inline-block;  vertical-align:-8px; }
 .contents-tab .contents-head li:last-child{border-right:none;}
-.noti{top:8px; right:6px; background:#ff7610; line-height:1.2; color:#fff; border:1px solid #fff; font-size:8px; text-align:center;  width:15px; height:15px; }
+.noti{top:8px; right:6px; background:#ff7610; line-height:14px; color:#fff; border:1px solid #fff; font-size:8px; text-indent:0px; width:15px; height:15px; }
 .popup{z-index:5; display:none; top:45px; right:-5px; width:240px; }
 .contents-tab section{width:100%; padding:60px 35px; height: calc(100% - 45px); background:#c6d2d8;}
 .timegif {margin-bottom:18px;}
@@ -530,9 +530,9 @@ li.off.active{background:rgba(51,58,78,1);  }
 .li-btn .icon-link{width:40px; height:40px; line-height: 38px; text-align:center; margin-left:7px; border-radius: 50%; color:#fff; font-size:30px; background:#00b0b3; border:1px solid #00b0b3; display: inline-block}
 .li-btn .icon-talk{width:40px; height:40px; line-height: 38px; border-radius: 50%;  text-align: center; color:#00b0b3; border:1px solid #00b0b3; font-size:30px; background:#fff; display: inline-block}
 .slider2-list-down li .icon-arrow-right , .slider2-list-up li .icon-arrow-right { font-size:12px; color:#dcdee0; opacity: 0.5;}
-.date-select-div{-webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
-	-moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
-	box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3); border-radius :5px 5px 0 0;  left:-20px; display:none; width:240px; height:189px; position:absolute; top:38px;  background:#333a4e;  z-index:5;}
+.date-select-div{-webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3); border-radius :5px 5px 0 0;  left:-20px; display:none; width:240px; height:189px; position:absolute; top:38px;  background:#333a4e;  z-index:5;}
 .date-select-div:after{ background: url(../img/triangle_navy.png); content:""; width:9px; height:7px; position:absolute; top:-7px; right:50%; margin-right:-5px; }
 .date-select-div .year{font-size:15px; color:white !important;  line-height:25px; width:100%; height:25px}
 .date-select-div .year i{color:white; font-size:12px; vertical-align:5px;}
@@ -607,10 +607,11 @@ div.footer{background:#000; position:absolute; bottom:0; height:44px; border:non
 .nurse_work_list li .lg-icon.icon-pill5{background:#61f2b7}
 .nurse_work_list li .pull-left:nth-child(5n+3){width:125px; font-size:14px; margin-top:5px;}
 .nurse_work_list li .pull-left:nth-child(5n){margin-top:5px;}
-.nurse_work_list li .clearfix{margin-top:10px; display:inline-block; width:100%;}
+.nurse_work_list li .clearfix{margin-top:5px; display:inline-block; width:100%;}
 .nurse_work_list li .pull-left.mgl15{font-size:14px;}
 .nurse_work_list{overflow-y:auto;}
-.nurse_work_list li{ padding: 10px 0; background:#fff; margin-bottom:-3px;width:100%; display:inline-block;}
+.nurse_work_list li{border-bottom: 1px solid #e7e8ea; padding: 10px 0; background:#fff; margin-bottom:-3px;width:100%; display:inline-block;}
+.nurse_work_list.nomargin li{margin-bottom:0;}
 .nurse_work_list li .profile{width:35px; margin:10px 5px 10px 15px; height:35px; border:1px solid #f1f1f1; border-radius:50%}
 .nurse_work_list li .width15{width:15%; text-align:right;}
 .li_d{border-left:4px solid #00b0b4}
